@@ -44,7 +44,7 @@ export function CtaSection() {
             Ready to Transform Your Financial Future?
           </h2>
           <p className="mb-8 text-lg text-muted-foreground">
-            Join thousands of users who have already taken control of their finances with FinEdge. Start your journey to
+            Join thousands of users who have already taken control of their finances with PeUnique. Start your journey to
             financial freedom today.
           </p>
 

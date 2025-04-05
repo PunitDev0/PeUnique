@@ -15,6 +15,7 @@ import PaymentSolutions from "@/components/HeroPage/payment-solutio"
 import { Helmet } from "react-helmet-async"
 import TestimonialCarousel from "@/components/HeroPage/testinmonials"
 import FeatureShowcase from "@/components/HeroPage/features"
+import Footer from "@/components/Layout/Footer"
 
 export default function Home() {
   return (
@@ -36,82 +37,7 @@ export default function Home() {
         {/* <TestimonialSection /> */}
         <CtaSection />
       </main>
-      <footer className="border-t bg-muted/40">
-        <div className="container py-10">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
-            <div className="flex flex-col gap-2">
-              <div className="flex items-center gap-2">
-                <Zap className="h-6 w-6 text-primary" />
-                <span className="text-xl font-bold">FinEdge</span>
-              </div>
-              <p className="text-sm text-muted-foreground">Modern financial solutions for the digital age.</p>
-            </div>
-            <div>
-              <h3 className="mb-4 text-sm font-semibold">Product</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground">
-                    Features
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground">
-                    Security
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground">
-                    Integrations
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="mb-4 text-sm font-semibold">Company</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground">
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground">
-                    Careers
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="mb-4 text-sm font-semibold">Legal</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground">
-                    Privacy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground">
-                    Terms
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground">
-                    Security
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} FinEdge. All rights reserved.
-          </div>
-        </div>
-      </footer>
+      <Footer/>
     </div>
     </>)
   );

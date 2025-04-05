@@ -11,7 +11,7 @@ const testimonials = [
     name: "Alex Johnson",
     role: "Small Business Owner",
     content:
-      "FinEdge has completely transformed how I manage my business finances. The dashboard gives me a clear picture of my cash flow, and the AI insights have helped me make smarter financial decisions.",
+      "PeUnique has completely transformed how I manage my business finances. The dashboard gives me a clear picture of my cash flow, and the AI insights have helped me make smarter financial decisions.",
     avatar: "/placeholder.svg?height=100&width=100",
     rating: 5,
     category: "business",
@@ -20,7 +20,7 @@ const testimonials = [
     name: "Sarah Chen",
     role: "Freelance Designer",
     content:
-      "As a freelancer, keeping track of my finances used to be a nightmare. With FinEdge, I can easily track my income, expenses, and taxes. The automated savings feature has helped me build my emergency fund without even thinking about it.",
+      "As a freelancer, keeping track of my finances used to be a nightmare. With PeUnique, I can easily track my income, expenses, and taxes. The automated savings feature has helped me build my emergency fund without even thinking about it.",
     avatar: "/placeholder.svg?height=100&width=100",
     rating: 5,
     category: "freelancer",
@@ -29,7 +29,7 @@ const testimonials = [
     name: "Michael Rodriguez",
     role: "Tech Entrepreneur",
     content:
-      "The investment insights from FinEdge have been game-changing for my portfolio. I've seen a 22% increase in my investments since I started using their recommendations. The interface is intuitive and the security features give me peace of mind.",
+      "The investment insights from PeUnique have been game-changing for my portfolio. I've seen a 22% increase in my investments since I started using their recommendations. The interface is intuitive and the security features give me peace of mind.",
     avatar: "/placeholder.svg?height=100&width=100",
     rating: 4,
     category: "investor",
@@ -38,7 +38,7 @@ const testimonials = [
     name: "Emily Parker",
     role: "Marketing Director",
     content:
-      "I've tried several financial apps, but FinEdge stands out with its AI assistant. It's like having a personal financial advisor available 24/7. The budgeting tools are also incredibly intuitive and have helped me save for my dream vacation.",
+      "I've tried several financial apps, but PeUnique stands out with its AI assistant. It's like having a personal financial advisor available 24/7. The budgeting tools are also incredibly intuitive and have helped me save for my dream vacation.",
     avatar: "/placeholder.svg?height=100&width=100",
     rating: 5,
     category: "professional",
@@ -47,7 +47,7 @@ const testimonials = [
     name: "David Kim",
     role: "Software Engineer",
     content:
-      "The automated investment feature is perfect for someone like me who doesn't have time to actively manage investments. Set it up once and let the AI do its magic. I've already recommended FinEdge to all my colleagues.",
+      "The automated investment feature is perfect for someone like me who doesn't have time to actively manage investments. Set it up once and let the AI do its magic. I've already recommended PeUnique to all my colleagues.",
     avatar: "/placeholder.svg?height=100&width=100",
     rating: 5,
     category: "professional",
@@ -56,7 +56,7 @@ const testimonials = [
     name: "Olivia Martinez",
     role: "Real Estate Investor",
     content:
-      "FinEdge's property investment analysis tools have helped me identify profitable opportunities that I would have otherwise missed. The cash flow projections are incredibly accurate and have given me confidence in my investment decisions.",
+      "PeUnique's property investment analysis tools have helped me identify profitable opportunities that I would have otherwise missed. The cash flow projections are incredibly accurate and have given me confidence in my investment decisions.",
     avatar: "/placeholder.svg?height=100&width=100",
     rating: 4,
     category: "investor",
@@ -65,7 +65,7 @@ const testimonials = [
     name: "James Wilson",
     role: "Restaurant Owner",
     content:
-      "Managing a restaurant's finances is complex, but FinEdge makes it simple. The inventory tracking integration and expense categorization have saved me hours of work each week. Customer support is also exceptional.",
+      "Managing a restaurant's finances is complex, but PeUnique makes it simple. The inventory tracking integration and expense categorization have saved me hours of work each week. Customer support is also exceptional.",
     avatar: "/placeholder.svg?height=100&width=100",
     rating: 5,
     category: "business",
@@ -74,7 +74,7 @@ const testimonials = [
     name: "Sophia Lee",
     role: "Freelance Writer",
     content:
-      "As someone who has irregular income, FinEdge's smart budgeting tools have been a lifesaver. The app adjusts my budget based on my income fluctuations, and the savings automation ensures I'm always putting something aside.",
+      "As someone who has irregular income, PeUnique's smart budgeting tools have been a lifesaver. The app adjusts my budget based on my income fluctuations, and the savings automation ensures I'm always putting something aside.",
     avatar: "/placeholder.svg?height=100&width=100",
     rating: 4,
     category: "freelancer",
@@ -102,7 +102,7 @@ export function TestimonialSection() {
         <div className="mx-auto mb-16 max-w-2xl text-center">
           <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">Trusted by Thousands</h2>
           <p className="text-muted-foreground">
-            See what our customers have to say about their experience with FinEdge.
+            See what our customers have to say about their experience with PeUnique.
           </p>
         </div>
 
@@ -184,7 +184,7 @@ export function TestimonialSection() {
             </div>
 
             <p className="text-muted-foreground">
-              Join thousands of satisfied customers who have transformed their financial lives with FinEdge. Our
+              Join thousands of satisfied customers who have transformed their financial lives with PeUnique. Our
               commitment to excellence has earned us top ratings across all platforms.
             </p>
           </motion.div>

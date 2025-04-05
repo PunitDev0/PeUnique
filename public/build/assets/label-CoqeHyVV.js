@@ -1,6 +1,0 @@
-import{c,a as n,P as f,b as u}from"./index-CY7fx3o1.js";import{r as o,j as r}from"./app-CmUzsojx.js";/**
- * @license lucide-react v0.485.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */const m=[["path",{d:"M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z",key:"1jg4f8"}]],w=c("facebook",m),b=o.forwardRef(({className:a,type:t,...e},s)=>r.jsx("input",{type:t,className:n("flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm",a),ref:s,...e}));b.displayName="Input";var x="Label",l=o.forwardRef((a,t)=>r.jsx(f.label,{...a,ref:t,onMouseDown:e=>{var i;e.target.closest("button, input, select, textarea")||((i=a.onMouseDown)==null||i.call(a,e),!e.defaultPrevented&&e.detail>1&&e.preventDefault())}}));l.displayName=x;var d=l;const p=u("text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"),g=o.forwardRef(({className:a,...t},e)=>r.jsx(d,{ref:e,className:n(p(),a),...t}));g.displayName=d.displayName;export{w as F,b as I,g as L};

@@ -48,19 +48,19 @@ export default function EcommerceAPIServicesPage() {
                   icon: <CreditCard className="h-7 w-7 sm:h-8 sm:w-8 text-purple-600 dark:text-purple-400" />,
                   title: "Payment Processing API",
                   description: "Enable secure, fast, and multi-method payment options for your customers.",
-                  image: "/images/payment-api.jpg",
+                  image: "https://plus.unsplash.com/premium_photo-1682104376321-63afb07e8f97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 },
                 {
                   icon: <BarChart3 className="h-7 w-7 sm:h-8 sm:w-8 text-purple-600 dark:text-purple-400" />,
                   title: "Financial Insights API",
                   description: "Provide real-time spending analytics to optimize customer experiences.",
-                  image: "/images/insights-api.jpg",
+                  image: "https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZmluYW5jaWFsfGVufDB8fDB8fHww",
                 },
                 {
                   icon: <Shield className="h-7 w-7 sm:h-8 sm:w-8 text-purple-600 dark:text-purple-400" />,
                   title: "Financing Solutions API",
                   description: "Offer flexible buy-now-pay-later options with 0% interest.",
-                  image: "/images/financing-api.jpg",
+                  image: "https://plus.unsplash.com/premium_photo-1682310056521-cc7357fc72cf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmluYW5jaW5nJTIwc29sdXRpb258ZW58MHx8MHx8fDA%3D",
                 },
               ].map((service, index) => (
                 <div
@@ -177,22 +177,22 @@ export default function EcommerceAPIServicesPage() {
                 {
                   title: "Seamless Integration",
                   description: "Easily embed our APIs into your existing eCommerce platform with minimal effort.",
-                  image: "/images/integration.jpg",
+                  image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?fit=crop&w=100&h=100&q=80",
                 },
                 {
                   title: "Enhanced Security",
                   description: "Bank-level encryption ensures your customers’ data is always protected.",
-                  image: "/images/security.jpg",
+                  image: "https://images.unsplash.com/photo-1496368077930-c1e31b4e5b44?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2VjdXJpdHl8ZW58MHx8MHx8fDA%3D",
                 },
                 {
                   title: "Scalable Solutions",
                   description: "Grow your business with APIs designed to handle increasing transaction volumes.",
-                  image: "/images/scalability.jpg",
+                  image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?fit=crop&w=100&h=100&q=80",
                 },
                 {
                   title: "Developer-Friendly",
                   description: "Comprehensive documentation and support for quick implementation.",
-                  image: "/images/developer.jpg",
+                  image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?fit=crop&w=100&h=100&q=80",
                 },
               ].map((benefit, index) => (
                 <div
