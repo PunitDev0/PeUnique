@@ -1,0 +1,112 @@
+export const posts = [
+  {
+    id: 1,
+    title: "Best Payment Gateway API Integration Provider in India",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl.",
+    author: "Komal Singh",
+    date: "April 3, 2025",
+    readTime: "5 min read",
+    category: "API Integration",
+    tags: ["BBPS", "API", "Bill Payment", "India"],
+    image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*4BguH2zWXg3SVSYAqI_Rsg.png",
+    featured: true,
+    link: "https://medium.com/@komalsinghnikatby/bbps-api-provider-company-bharat-bill-payment-system-apibest-payment-gateway-api-integration-490be658cc1c"
+  },
+  {
+    id: 2,
+    title: "Best Payment Gateway Provider: Top Choices for 2025",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl.",
+    author: "Komal Singh",
+    date: "March 30, 2025",
+    readTime: "6 min read",
+    category: "Payment Gateways",
+    tags: ["Payment Gateway", "Security", "Business"],
+    image: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*m8tIlrCfXMRR07eRTB2xeg.png",
+    link: "https://medium.com/@komalsinghnikatby/best-payment-gateway-provider-04baf678e241"
+  },
+  {
+    id: 3,
+    title: "Best Payment Gateways & Payment Solutions in India",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl.",
+    author: "Komal Singh",
+    date: "March 20, 2025",
+    readTime: "4 min read",
+    category: "E-commerce",
+    tags: ["Payment Solutions", "India", "E-commerce"],
+    image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*qtgSMdBmlbvuqFRZZJcRgA.png",
+    link: "https://medium.com/@komalsinghnikatby/best-payment-gateways-payment-solutions-in-india-c87405301b19"
+  },
+  {
+    id: 4,
+    title: "E-commerce Payment Solution Service Provider in Noida",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl.",
+    author: "Komal Singh",
+    date: "March 15, 2025",
+    readTime: "7 min read",
+    category: "Market Trends",
+    tags: ["Payment Gateway", "India", "Trends"],
+    image: "https://ic.pics.livejournal.com/ext_6726001/100879351/1656/1656_800.png",
+    featured: true,
+    link: "https://ext-6726001.livejournal.com/1355.html?newpost=1"
+  },
+  {
+    id: 5,
+    title: "Trusted E-commerce Payment Gateway Solutions",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl.",
+    author: "Komal Singh",
+    date: "March 5, 2025",
+    readTime: "5 min read",
+    category: "E-commerce",
+    tags: ["E-commerce", "Payment Gateway", "Trust"],
+    image: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*OUbyxiLHXaS5xBbS5SKQPg.png",
+    link: "https://medium.com/@komalsinghnikatby/trusted-e-commerce-payment-gateway-75dce2665ec9"
+  },
+  {
+    id: 6,
+    title: "Best Payment Gateway Provider in Noida: Local Expertise",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl.",
+    author: "Komal Singh",
+    date: "February 25, 2025",
+    readTime: "6 min read",
+    category: "Local Business",
+    tags: ["Noida", "Payment Gateway", "Startups"],
+    image: "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*frfsytebge3lXy2ul2Fgog.png",
+    link: "https://medium.com/@komalsinghnikatby/best-payment-gateway-provider-in-noida-e8b5fbec3fb7"
+  },
+  {
+    id: 7,
+    title: "Top Payment Gateways Company in India: Market Leaders",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl.",
+    author: "Komal Singh",
+    date: "February 15, 2025",
+    readTime: "4 min read",
+    category: "Industry",
+    tags: ["Payment Gateways", "India", "Market Leaders"],
+    image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*OLUySy1pvY33Iq-H8yBQTA.png",
+    link: "https://medium.com/@komalsinghnikatby/top-payment-gateways-company-in-india-d2815486e04d"
+  },
+  {
+    id: 8,
+    title: "Secure Payment Gateway for Every Business in India",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl.",
+    author: "Komal Singh",
+    date: "February 10, 2025",
+    readTime: "6 min read",
+    category: "Security",
+    tags: ["Secure Payment", "Fraud Protection", "India"],
+    image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*bmWiY-6PueOVfHtqN2fKRw.png",
+    link: "https://medium.com/@komalsinghnikatby/secure-payment-gateway-for-every-business-provider-in-india-ef4da43d5292"
+  },
+  {
+    id: 9,
+    title: "LiveJournal Update: Advanced Payment Gateway Features",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl.",
+    author: "Komal Singh",
+    date: "February 5, 2025",
+    readTime: "5 min read",
+    category: "Technology",
+    tags: ["Payment Gateway", "Features", "Trends"],
+    image: "https://ic.pics.livejournal.com/ext_6726001/100879351/1961/1961_800.png",
+    link: "https://ext-6726001.livejournal.com/1611.html?newpost=1"
+  }
+];

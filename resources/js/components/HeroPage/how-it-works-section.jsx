@@ -49,7 +49,7 @@ export function HowItWorksSection() {
       title: "Flexible Payment Options",
       description:
         "Offer your customers a variety of payment methods while managing transactions securely with our advanced payment processing system.",
-      image: "https://as1.ftcdn.net/v2/jpg/10/66/91/90/1000_F_1066919017_zHy5adMOSQLjJBOoFhkmxJ0RfwFp9q5T.jpg",
+      image: "assets/paymentOptions.jpeg",
       features: [
         "Support for cards, wallets, UPI, and bank transfers",
         "Multi-currency payment processing",
@@ -62,7 +62,7 @@ export function HowItWorksSection() {
       title: "Full Authentication & Security",
       description:
         "Protect your business and customers with our comprehensive authentication system and top-tier security measures.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "assets/paymentSecurity.jpeg",
       features: [
         "Multi-factor authentication (MFA)",
         "OAuth 2.0 and JWT support",

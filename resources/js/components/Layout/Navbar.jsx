@@ -78,8 +78,8 @@ function Navbar() {
           <Link href="/contact" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400">
             Contact
           </Link>
-          <Link href="/testimonials" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400">
-            Testimonials
+          <Link href="/blog" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400">
+            Blogs
           </Link>
         </nav>
 
