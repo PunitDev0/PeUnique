@@ -34,7 +34,7 @@ export default function Home() {
         <PaymentGatewayFeatures />
         <PaymentSolutions/>
         {/* <FeatureShowcase/> */}
-        <TestimonialCarousel/>
+        {/* <TestimonialCarousel/> */}
         <PaymentGatewayInfo/>
         {/* <TestimonialSection /> */}
         <CtaSection />
