@@ -11,11 +11,11 @@ export function ThemeToggle() {
   const [theme, setThemeState] = useState("light")
   const [mounted, setMounted] = useState(false)
 
-  useEffect(() => {
-    setMounted(true)
-    const savedTheme = localStorage.getItem("theme") || "system"
-    setThemeState(savedTheme)
-  }, [])
+  // useEffect(() => {
+  //   setMounted(true)
+  //   const savedTheme = localStorage.getItem("theme") || "light"
+  //   setThemeState(savedTheme)
+  // }, [])
 
   useEffect(() => {
     if (!mounted) return

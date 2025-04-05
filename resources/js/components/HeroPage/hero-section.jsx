@@ -145,7 +145,7 @@ export function HeroSection() {
             <div className="absolute -z-10 h-64 w-64 rounded-full bg-primary/20 blur-3xl" />
             <div className="relative w-full max-w-[500px] sm:max-w-[600px] overflow-hidden rounded-2xl border bg-background/50 shadow-xl">
               <img
-                src="/assets/DashbaordPreview.jpeg"
+                src="assets/DashbaordPreview.jpeg"
                 width={600}
                 height={600}
                 alt="Dashboard preview"

@@ -7,14 +7,14 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
 const paymentMethods = [
-  { title: "UPI", image: '/assets/icons/upi.png', description: "Enable instant bank transfers with UPI payments", color: "bg-purple-100 dark:bg-purple-900/20" },
-  { title: "Credit/Debit Cards", image: '/assets/icons/card.png', description: "Accept all major credit and debit cards securely", color: "bg-blue-100 dark:bg-blue-900/20" },
-  { title: "Wallets", image: '/assets/icons/wallet.png', description: "Support popular digital wallets for quick checkout", color: "bg-green-100 dark:bg-green-900/20" },
-  { title: "Payment Links", image: '/assets/icons/link.png', description: "Share payment links via email, SMS, or social media", color: "bg-yellow-100 dark:bg-yellow-900/20" },
-  { title: "Net Banking", image: '/assets/icons/netbanking.png', description: "Connect with 100+ banks for direct transfers", color: "bg-red-100 dark:bg-red-900/20" },
-  { title: "EMI", image: '/assets/icons/emi.png', description: "Offer flexible EMI options for higher value purchases", color: "bg-indigo-100 dark:bg-indigo-900/20" },
-  { title: "QR Codes", image: '/assets/icons/qrcode.png', description: "Generate dynamic QR codes for contactless payments", color: "bg-pink-100 dark:bg-pink-900/20" },
-  { title: "Pre-built Forms", image: '/assets/icons/paymentlink.png', description: "Implement ready-to-use checkout forms with minimal code", color: "bg-orange-100 dark:bg-orange-900/20" },
+  { title: "UPI", image: 'assets/icons/upi.png', description: "Enable instant bank transfers with UPI payments", color: "bg-purple-100 dark:bg-purple-900/20" },
+  { title: "Credit/Debit Cards", image: 'assets/icons/card.png', description: "Accept all major credit and debit cards securely", color: "bg-blue-100 dark:bg-blue-900/20" },
+  { title: "Wallets", image: 'assets/icons/wallet.png', description: "Support popular digital wallets for quick checkout", color: "bg-green-100 dark:bg-green-900/20" },
+  { title: "Payment Links", image: 'assets/icons/link.png', description: "Share payment links via email, SMS, or social media", color: "bg-yellow-100 dark:bg-yellow-900/20" },
+  { title: "Net Banking", image: 'assets/icons/netbanking.png', description: "Connect with 100+ banks for direct transfers", color: "bg-red-100 dark:bg-red-900/20" },
+  { title: "EMI", image: 'assets/icons/emi.png', description: "Offer flexible EMI options for higher value purchases", color: "bg-indigo-100 dark:bg-indigo-900/20" },
+  { title: "QR Codes", image: 'assets/icons/qrcode.png', description: "Generate dynamic QR codes for contactless payments", color: "bg-pink-100 dark:bg-pink-900/20" },
+  { title: "Pre-built Forms", image: 'assets/icons/paymentlink.png', description: "Implement ready-to-use checkout forms with minimal code", color: "bg-orange-100 dark:bg-orange-900/20" },
 ]
 
 export default function PaymentSolutions() {
