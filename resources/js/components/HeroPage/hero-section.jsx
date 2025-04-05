@@ -61,7 +61,7 @@ export function HeroSection() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
               >
-                Smart Banking for the <span className="gradient-text">Digital Age</span>
+               Secure Payment Gateway for Every  <span className="gradient-text">Business Provider in India</span>
               </motion.h1>
               <motion.p
                 className="text-base text-muted-foreground sm:text-lg md:text-xl max-w-[600px]"
@@ -69,8 +69,7 @@ export function HeroSection() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-                Take control of your finances with our AI-powered platform. Save, invest, and grow your wealth with
-                personalized insights and seamless transactions.
+               Simplify your transactions with our advanced payment gateway integration services. As a Secure Payment Gateway for Every Business Provider in India, we offer seamless integration for websites, apps, and businesses of all sizes.
               </motion.p>
             </div>
 

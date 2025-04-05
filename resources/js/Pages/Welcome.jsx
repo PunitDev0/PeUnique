@@ -16,6 +16,7 @@ import { Helmet } from "react-helmet-async"
 import TestimonialCarousel from "@/components/HeroPage/testinmonials"
 import FeatureShowcase from "@/components/HeroPage/features"
 import Footer from "@/components/Layout/Footer"
+import PaymentGatewayInfo from "@/components/HeroPage/FAQSection"
 
 export default function Home() {
   return (
@@ -32,8 +33,9 @@ export default function Home() {
         <HowItWorksSection />
         <PaymentGatewayFeatures />
         <PaymentSolutions/>
-        <FeatureShowcase/>
+        {/* <FeatureShowcase/> */}
         <TestimonialCarousel/>
+        <PaymentGatewayInfo/>
         {/* <TestimonialSection /> */}
         <CtaSection />
       </main>

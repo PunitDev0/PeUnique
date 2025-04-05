@@ -79,65 +79,68 @@ export default function PaymentGatewayFeatures() {
   }, [features])
 
   return (
-    <div className="relative bg-background py-24 overflow-hidden" ref={containerRef}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Features of Our{" "}
-            <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">Payment Gateways</span>
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Our Best Payment Gateways & Payment Solutions in India offer seamless and secure transaction processing for businesses of all sizes.
-          </p>
-        </div>
+    <div className="relative bg-background py-12 sm:py-16 md:py-24 overflow-hidden" ref={containerRef}>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="text-center mb-12 sm:mb-16 md:mb-20">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
+          Features of Our{" "}
+          <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+            Payment Gateways
+          </span>
+        </h2>
+        <p className="text-muted-foreground text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
+          Our Best Payment Gateways & Payment Solutions in India offer seamless and secure transaction processing for businesses of all sizes.
+        </p>
+      </div>
 
-        <div className="absolute left-1/2 top-24 bottom-0 w-[2px] -translate-x-1/2">
-          <div
-            className="absolute top-10 left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-primary z-10 "
-            style={{ boxShadow: "0 0 20px 5px rgba(59, 130, 246, 0.8)" }}
-          />
-          <motion.div
-            className="absolute h-full w-full top-10 origin-top trans bg-gradient-to-b from-primary via-purple-500 to-primary rounded-full"
-            style={{
-              boxShadow: "0 0 20px 4px rgba(79, 70, 229, 0.7)",
-              scaleY: scrollYProgress,
-            }}
-          />
-          <motion.div
-            className="absolute top-10 left-1/2 -translate-x-1/2 w-[4px] h-[30%] blur-md bg-primary/50"
-            animate={{
-              opacity: [0.4, 0.8, 0.4],
-              height: ["30%", "40%", "30%"],
-            }}
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-            style={{
-              scaleY: scrollYProgress,
-              transformOrigin: "top",
-            }}
-          />
-        </div>
+      {/* Timeline - Hidden on mobile */}
+      <div className="hidden md:block absolute left-1/2 top-24 bottom-0 w-[2px] -translate-x-1/2">
+        <div
+          className="absolute top-10 left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-primary z-10"
+          style={{ boxShadow: "0 0 20px 5px rgba(59, 130, 246, 0.8)" }}
+        />
+        <motion.div
+          className="absolute h-full w-full top-10 origin-top bg-gradient-to-b from-primary via-purple-500 to-primary rounded-full"
+          style={{
+            boxShadow: "0 0 20px 4px rgba(79, 70, 229, 0.7)",
+            scaleY: scrollYProgress,
+          }}
+        />
+        <motion.div
+          className="absolute top-10 left-1/2 -translate-x-1/2 w-[4px] h-[30%] blur-md bg-primary/50"
+          animate={{
+            opacity: [0.4, 0.8, 0.4],
+            height: ["30%", "40%", "30%"],
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+          style={{
+            scaleY: scrollYProgress,
+            transformOrigin: "top",
+          }}
+        />
+      </div>
 
-        <div className="relative z-10">
-          {features.map((feature, index) => {
-            const { xInitial } = featureTransforms[index]
-            return (
-              <Feature
-                key={feature.id}
-                feature={feature}
-                xInitial={xInitial}
-                scrollYProgress={scrollYProgress}
-                index={index}
-                featuresLength={features.length}
-              />
-            )
-          })}
-        </div>
+      <div className="relative z-10 space-y-8 md:space-y-0">
+        {features.map((feature, index) => {
+          const { xInitial } = featureTransforms[index]
+          return (
+            <Feature
+              key={feature.id}
+              feature={feature}
+              xInitial={xInitial}
+              scrollYProgress={scrollYProgress}
+              index={index}
+              featuresLength={features.length}
+            />
+          )
+        })}
       </div>
     </div>
+  </div>
   )
 }
 
