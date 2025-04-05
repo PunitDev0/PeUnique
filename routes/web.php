@@ -26,5 +26,8 @@ Route::get('/ecommerce', function () {
 Route::get('/education', function () {
     return Inertia::render('Education');
 });
+Route::get('/blog', function () {
+    return Inertia::render('Blog');
+});
 
 

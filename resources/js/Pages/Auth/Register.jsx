@@ -1,14 +1,12 @@
 "use client";
 import { useState } from "react"
-import Link from "next/link"
-import { useRouter } from "next/navigation"
+import { Link } from "@inertiajs/react";
 import { Apple, Facebook, Github, Loader2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
 export default function SignupPage() {
-  const router = useRouter()
   const [isLoading, setIsLoading] = useState(false)
   const [formData, setFormData] = useState({
     name: "",
@@ -26,11 +24,7 @@ export default function SignupPage() {
     e.preventDefault()
     setIsLoading(true)
 
-    // Simulate API call
-    setTimeout(() => {
-      setIsLoading(false)
-      router.push("/dashboard")
-    }, 1500)
+  
   }
 
   return (
