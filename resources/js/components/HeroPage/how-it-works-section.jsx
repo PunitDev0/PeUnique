@@ -93,8 +93,8 @@ export function HowItWorksSection() {
           <p className="text-muted-foreground">Our four-step process to streamline your payment ecosystem</p>
         </motion.div>
 
-        <Tabs defaultValue="integrate" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8">
+        <Tabs defaultValue="integrate" className="w-full mx-auto">
+          <TabsList className="mb-8 w-full">
             <TabsTrigger value="integrate">1. Integrate</TabsTrigger>
             <TabsTrigger value="dashboards">2. Dashboards</TabsTrigger>
             <TabsTrigger value="payments">3. Payments</TabsTrigger>
@@ -103,7 +103,7 @@ export function HowItWorksSection() {
 
           {steps.map((step) => (
             <TabsContent key={step.id} value={step.id} className="mt-0">
-              <div className="grid gap-6 md:grid-cols-2 md:gap-12 items-center">
+              <div className="grid gap-6 md:grid-cols-2 md:gap-12 items-center p-5">
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}

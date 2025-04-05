@@ -15,7 +15,7 @@ const Footer = () => {
 
   return (
     <footer className="border-t bg-muted/40 ">
-      <div className="container py-12 md:py-16 max-w-[var(--mw)] mx-auto">
+      <div className="container py-12 md:py-16 max-w-[var(--mw)] mx-auto p-5">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4 lg:grid-cols-5">
           {/* Brand Section */}
           <div className="flex flex-col gap-4">

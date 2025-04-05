@@ -45,24 +45,24 @@ const TestimonialCarousel = () => {
   }, [isPaused]);
 
   return (
-    <div className="max-w-[var(--mw)] mx-auto text-center py-12">
+    <div className=" text-center py-12 bg-gray-50">
       {/* ✅ Added Section Title & Subtitle */}
+      {/* ✅ Auto-scroll with pause on hover */}
+      <div
+        className="w-full overflow-hidden mt-8 relative max-w-[var(--mw)] mx-auto"
+        ref={containerRef}
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+      >
       <div className='text-left'>
-      <h2 className="text-5xl font-bold text-gray-900 dark:text-white">What Our Users Say</h2>
+      <h2 className="lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-bold text-gray-900 dark:text-white">What Our Users Say</h2>
       <p className="text-gray-600 dark:text-gray-300 mt-2 text-lg">
         Hear from our happy customers who love using our platform.
       </p>
 
       </div>
-      {/* ✅ Auto-scroll with pause on hover */}
-      <div
-        className="w-full overflow-hidden mt-8 relative"
-        ref={containerRef}
-        onMouseEnter={() => setIsPaused(true)}
-        onMouseLeave={() => setIsPaused(false)}
-      >
         <div
-          className="flex gap-6 transition-transform ease-linear"
+          className="flex gap-6 transition-transform ease-linear "
           style={{ transform: `translateX(-${position}px)` }}
         >
           {[...testimonials, ...testimonials].map((testimonial, index) => (
