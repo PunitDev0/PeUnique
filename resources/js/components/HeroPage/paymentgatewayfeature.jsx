@@ -17,7 +17,7 @@ export default function PaymentGatewayFeatures() {
       id: 1,
       title: "150+ Payment Modes",
       description:
-        "Support over 150 payment options with our best payment gateway in India, including UPI, wallets, debit/credit cards, and net banking for maximum customer flexibility.",
+        "Our platform supports over 150+ payment options, including UPI, wallets, debit/credit cards, net banking, and more, ensuring flexibility for your customers.",
       image: "/assets/icons/card.png",
       side: "left",
     },
@@ -25,7 +25,7 @@ export default function PaymentGatewayFeatures() {
       id: 2,
       title: "Secure Transactions",
       description:
-        "Ensure safe payments with advanced encryption and fraud prevention, making our secure payment solutions trusted across India.",
+        "With advanced encryption and fraud prevention measures, we guarantee safe and secure transactions from start to finish.",
       image: "/assets/icons/netbanking.png",
       side: "right",
     },
@@ -33,7 +33,7 @@ export default function PaymentGatewayFeatures() {
       id: 3,
       title: "Multi-Business Support",
       description:
-        "Tailored payment gateway integrations for e-commerce, education, retail, and B2B services, designed by a leading payment solution provider in India.",
+        "As a leading E-commerce Payment Solution Service Provider, we cater to e-commerce, education, retail, B2B services, and more, offering tailored payment gateway integrations.",
       image: "/assets/icons/business.png",
       side: "left",
     },
@@ -41,7 +41,7 @@ export default function PaymentGatewayFeatures() {
       id: 4,
       title: "Seamless API Integration",
       description:
-        "Easily integrate our payment gateway into websites, apps, and platforms with well-documented APIs for smooth functionality.",
+        "Our well-documented API resources allow for easy integration into websites, apps, and custom platforms.",
       image: "/assets/icons/Integration.png",
       side: "right",
     },
@@ -49,7 +49,7 @@ export default function PaymentGatewayFeatures() {
       id: 5,
       title: "Affordable Pricing Plans",
       description:
-        "Enjoy transparent, cost-effective pricing with no hidden fees, making our payment solutions ideal for businesses of all sizes in India.",
+        "Transparent pricing with no hidden costs, making our payment solutions cost-effective for all businesses.",
       image: "/assets/icons/wallet.png",
       side: "left",
     },
@@ -57,7 +57,7 @@ export default function PaymentGatewayFeatures() {
       id: 6,
       title: "Real-Time Analytics",
       description:
-        "Track transactions and optimize operations with real-time reporting and analytics via our advanced payment gateway dashboard.",
+        "Monitor transactions, manage refunds, and optimize financial operations with our robust analytics dashboard.",
       image: "/assets/icons/analytics.png",
       side: "right",
     },
@@ -65,7 +65,7 @@ export default function PaymentGatewayFeatures() {
       id: 7,
       title: "Instant Settlements",
       description:
-        "Access fast settlements to maintain smooth cash flow with our efficient payment gateway services in India.",
+        "Get access to quick settlements, ensuring smooth cash flow for your business.",
       image: "/assets/icons/settlement.png",
       side: "left",
     },
@@ -73,7 +73,7 @@ export default function PaymentGatewayFeatures() {
       id: 8,
       title: "Custom Payment Pages",
       description:
-        "Boost conversions with branded, customizable payment pages tailored to your business using our flexible payment solutions.",
+        "Align your payment experience with your brand by customizing payment pages for better user engagement and higher conversions.",
       image: "/assets/icons/emi.png",
       side: "right",
     },
