@@ -51,7 +51,7 @@ export function HeroSection() {
                 className="inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs sm:text-sm font-medium text-primary"
               >
                 <span className="mr-1 flex h-2 w-2 rounded-full bg-primary"></span>
-                Trusted by 10,000+ Businesses in India
+               <h1> Trusted by 10,000+ Businesses in India</h1>
                 <ChevronRight className="ml-1 h-3 w-3 sm:h-4 sm:w-4" />
               </motion.div>
 
