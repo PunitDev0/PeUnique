@@ -37,54 +37,10 @@ export default function EcommerceAPIServicesPage() {
 
         {/* Main Content */}
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-20 relative z-10">
-          {/* API Services Section */}
-          <section className="mb-16 sm:mb-20">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-8 sm:mb-10 text-center tracking-tight">
-              Our eCommerce API Services
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6">
-              {[
-                {
-                  icon: <CreditCard className="h-7 w-7 sm:h-8 sm:w-8 text-purple-600 dark:text-purple-400" />,
-                  title: "Payment Processing API",
-                  description: "Enable secure, fast, and multi-method payment options for your customers.",
-                  image: "https://plus.unsplash.com/premium_photo-1682104376321-63afb07e8f97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                },
-                {
-                  icon: <BarChart3 className="h-7 w-7 sm:h-8 sm:w-8 text-purple-600 dark:text-purple-400" />,
-                  title: "Financial Insights API",
-                  description: "Provide real-time spending analytics to optimize customer experiences.",
-                  image: "https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZmluYW5jaWFsfGVufDB8fDB8fHww",
-                },
-                {
-                  icon: <Shield className="h-7 w-7 sm:h-8 sm:w-8 text-purple-600 dark:text-purple-400" />,
-                  title: "Financing Solutions API",
-                  description: "Offer flexible buy-now-pay-later options with 0% interest.",
-                  image: "https://plus.unsplash.com/premium_photo-1682310056521-cc7357fc72cf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmluYW5jaW5nJTIwc29sdXRpb258ZW58MHx8MHx8fDA%3D",
-                },
-              ].map((service, index) => (
-                <div
-                  key={index}
-                  className="bg-white dark:bg-black/40 backdrop-blur-sm p-5 sm:p-6 rounded-xl border border-gray-200 dark:border-purple-900/30 shadow-sm dark:shadow-purple-900/5 text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 relative overflow-hidden"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-indigo-500/10 opacity-0 hover:opacity-100 transition-opacity duration-300" />
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-28 sm:h-32 object-cover rounded-lg mb-4 relative z-10"
-                  />
-                  <div className="flex justify-center mb-4 relative z-10">{service.icon}</div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-2 relative z-10">{service.title}</h3>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base relative z-10">{service.description}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-
           {/* H2 Sections */}
           <section className="mb-16 sm:mb-20">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-8 sm:mb-10 text-center tracking-tight">
-              Tailored Payment Gateway Solutions
+              Tailored Payment Gateway Solutions in Noida
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6">
               {[
@@ -170,28 +126,28 @@ export default function EcommerceAPIServicesPage() {
           {/* Why Choose Us */}
           <section className="mb-16 sm:mb-20">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-8 sm:mb-10 text-center tracking-tight">
-              Why Integrate with PeUnique?
+              Why Choose Our Payment Gateway?
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
               {[
                 {
                   title: "Seamless Integration",
-                  description: "Easily embed our APIs into your existing eCommerce platform with minimal effort.",
+                  description: "Integrate effortlessly with Shopify, WooCommerce, Magento, OpenCart, and custom websites using our APIs and plugins.",
                   image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?fit=crop&w=100&h=100&q=80",
                 },
                 {
                   title: "Enhanced Security",
-                  description: "Bank-level encryption ensures your customers’ data is always protected.",
-                  image: "https://images.unsplash.com/photo-1496368077930-c1e31b4e5b44?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2VjdXJpdHl8ZW58MHx8MHx8fDA%3D",
+                  description: "PCI DSS compliance, AI-driven fraud detection, and end-to-end encryption ensure risk-free transactions.",
+                  image: "https://images.unsplash.com/photo-1496368077930-c1e31b4e5b44?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
                 },
                 {
                   title: "Scalable Solutions",
-                  description: "Grow your business with APIs designed to handle increasing transaction volumes.",
+                  description: "Handle bulk transactions and grow globally with multi-currency support and fast payouts.",
                   image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?fit=crop&w=100&h=100&q=80",
                 },
                 {
-                  title: "Developer-Friendly",
-                  description: "Comprehensive documentation and support for quick implementation.",
+                  title: "Versatile Payment Options",
+                  description: "Support 150+ payment modes including UPI, QR Pay, Link Pay, Cards, and Wallets for all business types.",
                   image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?fit=crop&w=100&h=100&q=80",
                 },
               ].map((benefit, index) => (
@@ -222,18 +178,18 @@ export default function EcommerceAPIServicesPage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-6">
               {[
                 {
-                  step: "1. Connect",
-                  description: "Sign up and get access to our API documentation and sandbox environment.",
+                  step: "1. Sign Up",
+                  description: "Register and access our API sandbox and documentation.",
                   icon: <Lock className="h-7 w-7 sm:h-8 sm:w-8 text-purple-600 dark:text-purple-400" />,
                 },
                 {
                   step: "2. Integrate",
-                  description: "Use our APIs to enhance your eCommerce platform with fintech features.",
+                  description: "Embed our payment gateway into your e-commerce platform seamlessly.",
                   icon: <Truck className="h-7 w-7 sm:h-8 sm:w-8 text-purple-600 dark:text-purple-400" />,
                 },
                 {
-                  step: "3. Scale",
-                  description: "Watch your business grow with our reliable and secure solutions.",
+                  step: "3. Transact",
+                  description: "Start accepting secure payments and scale your business.",
                   icon: <BarChart3 className="h-7 w-7 sm:h-8 sm:w-8 text-purple-600 dark:text-purple-400" />,
                 },
               ].map((step, index) => (
@@ -253,7 +209,7 @@ export default function EcommerceAPIServicesPage() {
           {/* CTA */}
           <section className="text-center">
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6 tracking-tight leading-tight">
-              Ready to Transform Your eCommerce Platform?
+              Ready to Enhance Your E-Commerce Payments?
             </h3>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

@@ -154,18 +154,18 @@ export default function AboutSection() {
 
         {/* Why Choose Us */}
         <div className="mb-16 sm:mb-20">
-          <h3 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 dark:text-white mb-8 sm:mb-10 tracking-tight">Why Choose PeUnique?</h3>
+          <h3 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 dark:text-white mb-8 sm:mb-10 tracking-tight">Why Choose our payment gateway?</h3>
           <p className="text-center text-gray-600 dark:text-gray-400 mb-8 sm:mb-10 max-w-xl sm:max-w-2xl mx-auto text-sm sm:text-base font-light">
-            PeUnique powers businesses with a versatile payment gateway, offering secure, scalable solutions for all industries.
+          PeUnique is the ultimate payment solution for businesses across e-commerce, education, retail, apps, wallets, and B2B services. Our innovative payment gateway ensures seamless transactions with a variety of secure payment modes, enabling businesses to scale efficiently in the digital economy.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6">
             {[
               { icon: <Shield />, title: "Payment Links", description: "Collect payments instantly by sharing secure links, even without a website." },
               { icon: <BarChart3 />, title: "QR Pay", description: "Accept payments effortlessly through QR codes and secure payment links." },
-              { icon: <Users />, title: "UPI Payments", description: "Fast, real-time UPI transactions." },
-              { icon: <Globe />, title: "Cards", description: "Support for all major cards, ensuring a smooth online shopping experience." },
-              { icon: <Award />, title: "Wallets", description: "Integration with top digital wallets like Paytm, Amazon Pay, and Google Pay." },
-              { icon: <ArrowRight />, title: "Net Banking", description: "Direct bank transfers with multiple banking options for easy payments." },
+              { icon: <Users />, title: "UPI Payments", description: " Fast and secure real-time payments for quick transactions." },
+              { icon: <Globe />, title: "Credit & Debit Cards", description: "Support for all major cards, ensuring a smooth online shopping experience." },
+              { icon: <Award />, title: "Wallets", description: " Integration with top digital wallets like Paytm, Amazon Pay, and Google Pay." },
+              { icon: <ArrowRight />, title: "Net Banking", description: " Direct bank transfers with multiple banking options for easy payments." },
               { icon: <Shield />, title: "EMI Options", description: "Enable installment-based payments to boost sales for high-value orders." },
               { icon: <Globe />, title: "QR Codes", description: "Simple and quick scanning for in-person transactions." },
               { icon: <Award />, title: "Payment Forms", description: "Ready-to-use forms for businesses to streamline payment collection." },
@@ -203,7 +203,7 @@ export default function AboutSection() {
 
         {/* CTA */}
         <div className="text-center">
-          <h3 className="text-xl sm:text-lg md:text-xl max-w-full font-bold text-gray-900 dark:text-white mb-6 tracking-tight leading-tight">
+          <h3 className="text-xl sm:text-lg md:text-xl max-w-full font-light text-gray-900 dark:text-white mb-6 tracking-tight leading-tight">
             With PeUnique, businesses get a secure, scalable, and efficient payment gateway tailored to meet their specific needs. Whether you're processing bulk payouts, managing subscription payments, or optimizing checkout experiences, we provide the best-in-class solutions to drive your business growth.
           </h3>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
