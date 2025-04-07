@@ -1,25 +1,25 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import { ArrowRight, CheckCircle2, ChevronRight, IndianRupee } from "lucide-react"
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
+import { useEffect, useState } from "react";
+import { ArrowRight, CheckCircle2, ChevronRight, IndianRupee } from "lucide-react";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
-  const [mounted, setMounted] = useState(false)
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
   if (!mounted) {
-    return null
+    return null;
   }
 
   return (
     <section className="relative overflow-hidden py-16 md:py-24 lg:py-44 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20 2xl:px-36">
       {/* Animated background */}
-      <div className="absolute inset-0 -z-10 a" />
+      <div className="absolute inset-0 -z-10" />
       <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
         <div
           className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-primary to-purple-500 opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
@@ -51,7 +51,7 @@ export function HeroSection() {
                 className="inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs sm:text-sm font-medium text-primary"
               >
                 <span className="mr-1 flex h-2 w-2 rounded-full bg-primary"></span>
-                New: AI-Powered Financial Insights
+                Trusted by 10,000+ Businesses in India
                 <ChevronRight className="ml-1 h-3 w-3 sm:h-4 sm:w-4" />
               </motion.div>
 
@@ -61,7 +61,8 @@ export function HeroSection() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
               >
-               Secure Payment Gateway for Every  <span className="gradient-text">Business Provider in India</span>
+                Secure Payment Gateway for Every{" "}
+                <span className="gradient-text">Business in India</span>
               </motion.h1>
               <motion.p
                 className="text-base text-muted-foreground sm:text-lg md:text-xl max-w-[600px]"
@@ -69,7 +70,7 @@ export function HeroSection() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-               Simplify your transactions with our advanced payment gateway integration services. As a Secure Payment Gateway for Every Business Provider in India, we offer seamless integration for websites, apps, and businesses of all sizes.
+                Discover the best payment gateway provider in India, integrating 150+ payment modes including UPI, wallets, and cards. Perfect for e-commerce, education, retail, and mobile apps with secure, seamless transactions.
               </motion.p>
             </div>
 
@@ -81,13 +82,13 @@ export function HeroSection() {
             >
               <a href="/signup">
                 <Button size="lg" className="group gradient-bg hover:opacity-90 w-full sm:w-auto">
-                  Get Started
+                  Start with Secure Payments
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </a>
               <a href="/demo">
                 <Button variant="outline" size="lg" className="border-primary/20 hover:bg-primary/5 w-full sm:w-auto">
-                  View Demo
+                  See Payment Gateway Demo
                 </Button>
               </a>
             </motion.div>
@@ -100,19 +101,19 @@ export function HeroSection() {
             >
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 text-primary" />
-                <span>No credit card required</span>
+                <span>No credit card needed</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 text-primary" />
-                <span>Free plan available</span>
+                <span>Free trial available</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 text-primary" />
-                <span>Bank-level security</span>
+                <span>Bank-grade security</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 text-primary" />
-                <span>24/7 customer support</span>
+                <span>24/7 support team</span>
               </div>
             </motion.div>
 
@@ -124,13 +125,19 @@ export function HeroSection() {
             >
               <div className="flex -space-x-2">
                 {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="h-6 w-6 sm:h-8 sm:w-8 rounded-full border-2 border-background bg-muted overflow-hidden">
-                    <img src={`/placeholder.svg?height=32&width=32&text=${i}`} alt={`User ${i}`} />
+                  <div
+                    key={i}
+                    className="h-6 w-6 sm:h-8 sm:w-8 rounded-full border-2 border-background bg-muted overflow-hidden"
+                  >
+                    <img
+                      src={`/placeholder.svg?height=32&width=32&text=${i}`}
+                      alt={`Happy customer ${i} using payment gateway`}
+                    />
                   </div>
                 ))}
               </div>
               <div className="text-muted-foreground">
-                <span className="font-medium text-foreground">10,000+</span> users already joined
+                <span className="font-medium text-foreground">10,000+</span> happy users in India
               </div>
             </motion.div>
           </motion.div>
@@ -144,10 +151,10 @@ export function HeroSection() {
             <div className="absolute -z-10 h-64 w-64 rounded-full bg-primary/20 blur-3xl" />
             <div className="relative w-full max-w-[500px] sm:max-w-[600px] overflow-hidden rounded-2xl border bg-background/50 shadow-xl">
               <img
-                src="assets/DashbaordPreview.jpeg"
+                src="/assets/DashbaordPreview.jpeg"
                 width={600}
                 height={600}
-                alt="Dashboard preview"
+                alt="Secure Payment Gateway Dashboard Preview"
                 className="rounded-xl w-full h-auto"
               />
               <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/10" />
@@ -183,14 +190,14 @@ export function HeroSection() {
               >
                 <div className="text-xs text-muted-foreground mb-1">Monthly Savings</div>
                 <div className="text-base sm:text-lg font-bold flex items-center">
-                  <IndianRupee size={12} className="sm:h-15" />1,240.50
+                  <IndianRupee size={12} className="sm:h-15" /> 1,240.50
                 </div>
                 <div className="mt-1 h-1.5 w-full bg-muted rounded-full overflow-hidden">
                   <div className="h-full w-3/4 bg-primary rounded-full"></div>
                 </div>
                 <div className="mt-1 flex justify-between text-xs">
                   <span className="text-muted-foreground flex items-center">
-                    Target:<IndianRupee size={12} />1500
+                    Target: <IndianRupee size={12} /> 1500
                   </span>
                   <span className="text-primary font-medium">82%</span>
                 </div>
@@ -208,22 +215,22 @@ export function HeroSection() {
         >
           <div className="rounded-lg border bg-card p-3 sm:p-4 text-center">
             <div className="text-xl sm:text-2xl font-bold">$2.5B+</div>
-            <div className="text-xs sm:text-sm text-muted-foreground">Assets Managed</div>
+            <div className="text-xs sm:text-sm text-muted-foreground">Assets Managed Securely</div>
           </div>
           <div className="rounded-lg border bg-card p-3 sm:p-4 text-center">
             <div className="text-xl sm:text-2xl font-bold">98%</div>
-            <div className="text-xs sm:text-sm text-muted-foreground">Customer Satisfaction</div>
+            <div className="text-xs sm:text-sm text-muted-foreground">Customer Satisfaction Rate</div>
           </div>
           <div className="rounded-lg border bg-card p-3 sm:p-4 text-center">
             <div className="text-xl sm:text-2xl font-bold">10K+</div>
-            <div className="text-xs sm:text-sm text-muted-foreground">Active Users</div>
+            <div className="text-xs sm:text-sm text-muted-foreground">Active Business Users</div>
           </div>
           <div className="rounded-lg border bg-card p-3 sm:p-4 text-center">
             <div className="text-xl sm:text-2xl font-bold">24/7</div>
-            <div className="text-xs sm:text-sm text-muted-foreground">Customer Support</div>
+            <div className="text-xs sm:text-sm text-muted-foreground">Support for Payments</div>
           </div>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

@@ -17,6 +17,7 @@ import TestimonialCarousel from "@/components/HeroPage/testinmonials"
 import FeatureShowcase from "@/components/HeroPage/features"
 import Footer from "@/components/Layout/Footer"
 import PaymentGatewayInfo from "@/components/HeroPage/FAQSection"
+import CategorySection from "@/components/HeroPage/categorySection"
 
 export default function Home() {
   return (
@@ -28,11 +29,12 @@ export default function Home() {
       </Helmet>
     <div className="flex min-h-screen flex-col ">
       <Navbar/>
-      <main className="">
+      <main className="mt-5">
         <HeroSection />
         <HowItWorksSection />
         <PaymentGatewayFeatures />
         <PaymentSolutions/>
+        <CategorySection/>
         {/* <FeatureShowcase/> */}
         {/* <TestimonialCarousel/> */}
         <PaymentGatewayInfo/>

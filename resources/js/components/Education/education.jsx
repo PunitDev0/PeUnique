@@ -45,19 +45,19 @@ export default function EducationAPIServicesPage() {
                   icon: <CreditCard className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
                   title: "Fee Payment API",
                   description: "Simplify tuition and fee collection with secure, multi-channel payment options.",
-                  image: "/images/fee-payment-api.jpg", // Replace with an image of a payment interface
+                  image: "https://plus.unsplash.com/premium_photo-1682104376321-63afb07e8f97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Replace with an image of a payment interface
                 },
                 {
                   icon: <Shield className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
                   title: "Student Financing API",
                   description: "Provide flexible financing plans for students with real-time approval.",
-                  image: "/images/student-financing-api.jpg", // Replace with an image of a financing offer
+                  image: "https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZmluYW5jaWFsfGVufDB8fDB8fHww", // Replace with an image of a financing offer
                 },
                 {
                   icon: <BarChart3 className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
                   title: "Financial Literacy API",
                   description: "Embed tools to teach students budgeting and financial planning.",
-                  image: "/images/financial-literacy-api.jpg", // Replace with an image of a learning dashboard
+                  image: "https://plus.unsplash.com/premium_photo-1682310056521-cc7357fc72cf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmluYW5jaW5nJTIwc29sdXRpb258ZW58MHx8MHx8fDA%3D", // Replace with an image of a learning dashboard
                 },
               ].map((service, index) => (
                 <div

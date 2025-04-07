@@ -85,7 +85,8 @@ function Navbar() {
 
         {/* Right Section (Theme Toggle + Buttons) */}
         <div className="flex items-center gap-4">
-          <ThemeToggle />
+         <div className="sm:flex hidden ">
+         <ThemeToggle />
           <Link href="/login">
             <Button variant="ghost" size="sm" className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400">
               Log in
@@ -99,6 +100,7 @@ function Navbar() {
               Get Started
             </Button>
           </Link>
+         </div>
 
           {/* Mobile Menu Button */}
           <button

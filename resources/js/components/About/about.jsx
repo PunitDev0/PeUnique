@@ -143,7 +143,7 @@ export default function AboutSection() {
               </div>
               <div className="relative h-60 sm:h-72 rounded-lg overflow-hidden shadow-md">
                 <img
-                  src="/placeholder.svg?height=600&width=800"
+                  src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
                   alt="PeUnique team"
                   className="object-cover w-full h-full transition-transform duration-500 hover:scale-110"
                 />

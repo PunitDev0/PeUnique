@@ -1,76 +1,76 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import { motion } from "framer-motion"
-import { ArrowRight, CheckCircle2 } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export function HowItWorksSection() {
-  const [mounted, setMounted] = useState(false)
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
   if (!mounted) {
-    return null
+    return null;
   }
 
   const steps = [
     {
       id: "integrate",
-      title: "Integrate Multiple APIs",
+      title: "Integrate Payment Gateway APIs",
       description:
-        "Seamlessly connect PaySync with your existing systems through our robust API ecosystem, supporting multiple payment gateways and services.",
+        "Easily integrate PeUnique with your systems using our robust API ecosystem, designed for seamless connectivity with multiple payment gateways across India.",
       image: "https://i.pinimg.com/736x/22/45/1c/22451ce7b100697d2cd2fec5350014b3.jpg",
       features: [
-        "Support for 50+ payment gateway APIs",
-        "Real-time transaction syncing",
-        "Custom API integration options",
-        "Developer-friendly documentation",
+        "Supports 50+ payment gateway APIs",
+        "Real-time transaction synchronization",
+        "Custom integration for developers",
+        "Comprehensive API documentation",
       ],
     },
     {
       id: "dashboards",
-      title: "Customized Dashboards",
+      title: "Custom Payment Dashboards",
       description:
-        "Access multiple tailored dashboards to monitor payments, analytics, and user activity, all designed to fit your business needs.",
+        "Monitor payments and analytics with PeUnique’s tailored dashboards, customized to meet the unique needs of your business in India.",
       image: "https://i.pinimg.com/736x/56/37/0a/56370a4d016fae6c684874c65ef9f373.jpg",
       features: [
-        "Multiple dashboard views (Admin, Merchant, User)",
-        "Real-time payment analytics",
-        "Customizable widgets and layouts",
-        "Multi-currency transaction overview",
+        "Multiple views: Admin, Merchant, User",
+        "Real-time payment insights",
+        "Custom widgets and layouts",
+        "Multi-currency tracking",
       ],
     },
     {
       id: "payments",
-      title: "Flexible Payment Options",
+      title: "Secure Payment Processing",
       description:
-        "Offer your customers a variety of payment methods while managing transactions securely with our advanced payment processing system.",
-      image: "assets/paymentOptions.jpeg",
+        "Provide flexible payment options with PeUnique’s advanced processing system, ensuring secure and fast transactions for your customers.",
+      image: "/assets/paymentOptions.jpeg",
       features: [
-        "Support for cards, wallets, UPI, and bank transfers",
-        "Multi-currency payment processing",
-        "Recurring payment capabilities",
-        "Fraud detection and prevention",
+        "Cards, UPI, wallets, and bank transfers",
+        "Multi-currency payment support",
+        "Recurring payment solutions",
+        "Built-in fraud prevention",
       ],
     },
     {
       id: "security",
-      title: "Full Authentication & Security",
+      title: "Advanced Payment Security",
       description:
-        "Protect your business and customers with our comprehensive authentication system and top-tier security measures.",
-      image: "assets/paymentSecurity.jpeg",
+        "Safeguard your business and customers with PeUnique’s top-tier security features and comprehensive authentication system.",
+      image: "/assets/paymentSecurity.jpeg",
       features: [
         "Multi-factor authentication (MFA)",
-        "OAuth 2.0 and JWT support",
+        "OAuth 2.0 and JWT integration",
         "End-to-end encryption",
-        "Compliance with PCI DSS and GDPR",
+        "PCI DSS and GDPR compliant",
       ],
     },
-  ]
+  ];
 
   return (
     <section id="how-it-works" className="py-20 relative overflow-hidden">
@@ -90,7 +90,9 @@ export function HowItWorksSection() {
           <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">
             How <span className="gradient-text">PeUnique</span> Works
           </h2>
-          <p className="text-muted-foreground">Our four-step process to streamline your payment ecosystem</p>
+          <p className="text-muted-foreground">
+            A four-step process to streamline your payment gateway solution in India
+          </p>
         </motion.div>
 
         <Tabs defaultValue="integrate" className="w-full mx-auto">
@@ -125,7 +127,8 @@ export function HowItWorksSection() {
 
                   <a href="/signup">
                     <Button className="mt-6 gradient-bg hover:opacity-90">
-                      Get Started <ArrowRight className="ml-2 h-4 w-4" />
+                      Start Using PeUnique
+                      <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </a>
                 </motion.div>
@@ -143,7 +146,7 @@ export function HowItWorksSection() {
                       src={step.image || "/placeholder.svg"}
                       width={600}
                       height={400}
-                      alt={step.title}
+                      alt={`${step.title} - PeUnique Payment Gateway Feature`}
                       className="rounded-xl w-full h-full object-cover"
                     />
                   </div>
@@ -154,5 +157,5 @@ export function HowItWorksSection() {
         </Tabs>
       </div>
     </section>
-  )
+  );
 }
