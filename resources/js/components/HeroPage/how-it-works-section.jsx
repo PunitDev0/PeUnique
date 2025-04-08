@@ -97,12 +97,12 @@ export function HowItWorksSection() {
         <Tabs defaultValue="ecommerce" className="w-full">
           <TabsList className="mb-8 grid w-full grid-cols-2 md:grid-cols-4 gap-2">
             {steps.map((step, index) => (
-              <TabsTrigger 
-                key={step.id} 
+              <TabsTrigger
+                key={step.id}
                 value={step.id}
                 className="text-sm py-2"
               >
-                {index + 1}. {step.title.split(" ")[0]}
+                {index + 1}. {index === 2 ? "Mobile Application" : step.title.split(" ")[0]}
               </TabsTrigger>
             ))}
           </TabsList>

@@ -42,7 +42,7 @@ export default function Home() {
           <HowItWorksSection />
           <PaymentGatewayFeatures />
           <PaymentSolutions />
-          <CategorySection />
+          {/* <CategorySection /> */}
           {/* <FeatureShowcase /> */}
           {/* <TestimonialCarousel /> */}
           <PaymentGatewayInfo />

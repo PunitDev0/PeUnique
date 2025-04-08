@@ -19,10 +19,16 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4 lg:grid-cols-5">
           {/* Brand Section */}
           <div className="flex flex-col gap-4">
-            <div className="flex items-center gap-2">
-              <Zap className="h-6 w-6 text-primary" />
-              <span className="text-xl font-bold">PeUnique</span>
-            </div>
+          <Link href="/">
+          <div className="flex items-center gap-2">
+            <img
+              src={'assets/logos/logo4.png'} // Use the imported logo
+              alt="PeUnique Logo"
+              className="max-w-32 object-contain" // Adjust size as needed
+            />
+            {/* <span className="text-xl font-bold text-gray-900 dark:text-white">PeUnique</span> */}
+          </div>
+        </Link>
             <p className="text-sm text-muted-foreground max-w-xs">
               The only payments solution in India that allows businesses to accept, process, and disburse payments with its product suite. It gives you access to all payment modes including credit card, debit card, netbanking, UPI, and popular wallets including JioMoney, Mobikwik, Airtel Money, FreeCharge, Ola Money, and PayZapp.
             </p>

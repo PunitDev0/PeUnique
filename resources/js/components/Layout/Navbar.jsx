@@ -56,28 +56,13 @@ function Navbar() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6">
-          <div className="relative">
-            <button
-              onClick={toggleFeaturesDropdown}
-              className="flex items-center text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 focus:outline-none"
-            >
-              Features
-              <ChevronDown className={`ml-1 h-4 w-4 transition-transform ${isFeaturesOpen ? "rotate-180" : ""}`} />
-            </button>
-            {isFeaturesOpen && (
-              <div className="absolute left-0 mt-2 w-48 rounded-xl bg-white dark:bg-black/90 border border-gray-200 dark:border-purple-900/30 shadow-lg">
-                {featuresItems.map((item) => (
-                  <Link
-                    key={item.label}
-                    href={item.href}
-                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-100 dark:hover:bg-purple-900/50 hover:text-purple-600 dark:hover:text-purple-400"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
+        
+          <Link href="/ecommerce" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400">
+            Ecommerce
+          </Link>
+          <Link href="/education" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400">
+            Education
+          </Link>
           <Link href="/about" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400">
             About
           </Link>
