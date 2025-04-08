@@ -21,18 +21,7 @@ import CategorySection from "@/components/HeroPage/categorySection";
 export default function Home() {
   return (
     <>
-      <Helmet>
-        <title>
-          PeUnique | Best Payment Gateway in India - Secure API Solutions in Noida
-        </title>
-        <meta
-          name="description"
-          content="Discover PeUnique, the best payment gateway in India based in Noida. Integrate secure payment APIs with 150+ modes for e-commerce, education, retail, and apps. Fast, reliable, and fraud-protected transactions."
-        />
-        <meta name="keywords" content="payment gateway India, secure payment API, Noida payment gateway, e-commerce payment solutions, UPI payment gateway, PeUnique" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://peunique.com/" />
-      </Helmet>
+
       <div className="flex min-h-screen flex-col">
         <header>
           <Navbar />

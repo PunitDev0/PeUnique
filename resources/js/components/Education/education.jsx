@@ -2,13 +2,20 @@
 
 import React from "react";
 import { CreditCard, BarChart3, Shield, ArrowRight, BookOpen, GraduationCap } from "lucide-react";
-import { Link } from "@inertiajs/react";
+import { Head, Link } from "@inertiajs/react";
 import { Button } from "@/components/ui/button";
 import Navbar from "../Layout/Navbar";
 
 export default function EducationAPIServicesPage() {
   return (
     <>
+     <Head>
+       <title>Best Payment Gateway Solution For Education Sector in India </title>
+       <meta
+          name="description"
+          content="Online fee Payment Solutions for schools, colleges, and educational institutions with 150+ Payment Modes including UPI, cards, net banking, and wallets."
+        />
+     </Head>
       <Navbar />
       <div className="min-h-screen w-full bg-gradient-to-b from-white to-gray-100 dark:from-black dark:to-purple-950/40 relative overflow-hidden">
         {/* Decorative Elements */}
