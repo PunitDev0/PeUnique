@@ -5,6 +5,7 @@ import { Link } from "@inertiajs/react";
 import { ThemeToggle } from "../HeroPage/theme-toggle";
 import { Button } from "../ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
+// Import the logo image (adjust the path as necessary)
 
 function Navbar() {
   const [isVisible, setIsVisible] = useState(true);
@@ -44,7 +45,12 @@ function Navbar() {
         {/* Logo */}
         <Link href="/">
           <div className="flex items-center gap-2">
-            <span className="text-xl font-bold text-gray-900 dark:text-white">PeUnique</span>
+            <img
+              src={'assets/logos/logo4.png'} // Use the imported logo
+              alt="PeUnique Logo"
+              className="max-w-32 object-contain" // Adjust size as needed
+            />
+            {/* <span className="text-xl font-bold text-gray-900 dark:text-white">PeUnique</span> */}
           </div>
         </Link>
 
@@ -85,22 +91,22 @@ function Navbar() {
 
         {/* Right Section (Theme Toggle + Buttons) */}
         <div className="flex items-center gap-4">
-         <div className="sm:flex hidden ">
-         <ThemeToggle />
-          <Link href="/login">
-            <Button variant="ghost" size="sm" className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400">
-              Log in
-            </Button>
-          </Link>
-          <Link href="/signup">
-            <Button
-              size="sm"
-              className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white transition-all duration-300"
-            >
-              Get Started
-            </Button>
-          </Link>
-         </div>
+          <div className="sm:flex hidden">
+            <ThemeToggle />
+            <Link href="/login">
+              <Button variant="ghost" size="sm" className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400">
+                Log in
+              </Button>
+            </Link>
+            <Link href="/signup">
+              <Button
+                size="sm"
+                className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white transition-all duration-300"
+              >
+                Get Started
+              </Button>
+            </Link>
+          </div>
 
           {/* Mobile Menu Button */}
           <button

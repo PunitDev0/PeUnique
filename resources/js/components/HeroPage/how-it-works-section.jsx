@@ -19,67 +19,66 @@ export function HowItWorksSection() {
 
   const steps = [
     {
-      id: "integrate",
-      title: "Integrate Payment Gateway APIs",
+      id: "ecommerce",
+      title: "E-commerce Payment Gateway",
       description:
-        "Easily integrate PeUnique with your systems using our robust API ecosystem, designed for seamless connectivity with multiple payment gateways across India.",
-      image: "https://i.pinimg.com/736x/22/45/1c/22451ce7b100697d2cd2fec5350014b3.jpg",
+        "We are the best Payment Gateway for eCommerce provider in Noida, offering fast and reliable payment processing for websites, online and offline stores—enhancing customer trust and driving higher sales.",
+      image: "/assets/peuniqe-ecommerce.webp",
       features: [
-        "Supports 50+ payment gateway APIs",
-        "Real-time transaction synchronization",
-        "Custom integration for developers",
-        "Comprehensive API documentation",
+        "Supports 150+ Payment Modes",
+        "Multi-Device Responsive Gateway",
+        "Quick Settlements & Auto-Reconciliation",
+        "Smooth Integration for Online & Offline Stores and Websites",
       ],
     },
     {
-      id: "dashboards",
-      title: "Custom Payment Dashboards",
+      id: "education",
+      title: "Education Payment Gateway for Institutions",
       description:
-        "Monitor payments and analytics with PeUnique’s tailored dashboards, customized to meet the unique needs of your business in India.",
-      image: "https://i.pinimg.com/736x/56/37/0a/56370a4d016fae6c684874c65ef9f373.jpg",
+        "Streamline fee collections with a Education Payment Gateway for Institutions in India designed for schools, colleges, universities, coaching centers, training institutes, and online learning platforms.",
+      image: "/assets/peunique-education.webp",
       features: [
-        "Multiple views: Admin, Merchant, User",
-        "Real-time payment insights",
-        "Custom widgets and layouts",
-        "Multi-currency tracking",
+        "Student & Parent-Friendly",
+        "Fast & Secure Transactions",
+        "Instant Payment Links & QR Codes",
+        "Customized Solutions for Institutions",
       ],
     },
     {
-      id: "payments",
-      title: "Secure Payment Processing",
+      id: "mobile_application",
+      title: "Payment Gateway for Mobile Application",
       description:
-        "Provide flexible payment options with PeUnique’s advanced processing system, ensuring secure and fast transactions for your customers.",
-      image: "/assets/paymentOptions.jpeg",
+        "We offer the best payment gateway for mobile applications, ensuring secure, fast, and user-friendly payment experiences. Our solutions guarantee seamless transactions across mobile apps with multiple payment modes, including UPI and wallets.",
+      image: "/assets/peunique-phone.webp",
       features: [
-        "Cards, UPI, wallets, and bank transfers",
-        "Multi-currency payment support",
-        "Recurring payment solutions",
-        "Built-in fraud prevention",
+        "Supports 150+ Payment Modes",
+        "Real-Time Payment Tracking",
+        "In-App Payment Links & QR",
+        "Seamless SDK and API Integration",
       ],
     },
     {
-      id: "security",
-      title: "Advanced Payment Security",
+      id: "healthcare",
+      title: "Healthcare Payment Gateway & Medical Billing API Solutions",
       description:
-        "Safeguard your business and customers with PeUnique’s top-tier security features and comprehensive authentication system.",
-      image: "/assets/paymentSecurity.jpeg",
+        "Secure and efficient Healthcare Payment Gateway & Medical Billing API Software. Designed for hospitals, clinics, labs, pharmacies, and telemedicine platforms, our solution supports 150+ payment modes including UPI, cards, net banking, wallets, and more.",
+      image: "/assets/peunique-healthcare.webp",
       features: [
-        "Multi-factor authentication (MFA)",
-        "OAuth 2.0 and JWT integration",
-        "End-to-end encryption",
-        "PCI DSS and GDPR compliant",
+        "Supports 150+ Payment Modes",
+        "Real-Time Payment Processing",
+        "Custom Payment Links & Invoices",
+        "Integration with Healthcare Software",
       ],
     },
   ];
 
   return (
     <section id="how-it-works" className="py-20 relative overflow-hidden">
-      {/* Background elements */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background via-background/80 to-background" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
 
-      <div className="max-w-[var(--mw)] mx-auto">
+      <div className="container max-w-[var(--mw)] mx-auto px-4">
         <motion.div
           className="mx-auto mb-16 max-w-2xl text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -95,17 +94,22 @@ export function HowItWorksSection() {
           </p>
         </motion.div>
 
-        <Tabs defaultValue="integrate" className="w-full mx-auto">
-          <TabsList className="mb-8 w-full">
-            <TabsTrigger value="integrate">1. Integrate</TabsTrigger>
-            <TabsTrigger value="dashboards">2. Dashboards</TabsTrigger>
-            <TabsTrigger value="payments">3. Payments</TabsTrigger>
-            <TabsTrigger value="security">4. Security</TabsTrigger>
+        <Tabs defaultValue="ecommerce" className="w-full">
+          <TabsList className="mb-8 grid w-full grid-cols-2 md:grid-cols-4 gap-2">
+            {steps.map((step, index) => (
+              <TabsTrigger 
+                key={step.id} 
+                value={step.id}
+                className="text-sm py-2"
+              >
+                {index + 1}. {step.title.split(" ")[0]}
+              </TabsTrigger>
+            ))}
           </TabsList>
 
           {steps.map((step) => (
             <TabsContent key={step.id} value={step.id} className="mt-0">
-              <div className="grid gap-6 md:grid-cols-2 md:gap-12 items-center p-5">
+              <div className="grid gap-6 md:grid-cols-2 md:gap-12 items-center">
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -119,18 +123,18 @@ export function HowItWorksSection() {
                   <div className="space-y-2 mt-6">
                     {step.features.map((feature, index) => (
                       <div key={index} className="flex items-start gap-2">
-                        <CheckCircle2 className="h-5 w-5 text-primary mt-0.5" />
+                        <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                         <span>{feature}</span>
                       </div>
                     ))}
                   </div>
 
-                  <a href="/signup">
-                    <Button className="mt-6 gradient-bg hover:opacity-90">
+                  <Button asChild className="mt-6 gradient-bg hover:opacity-90">
+                    <a href="/signup">
                       Start Using PeUnique
                       <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </a>
+                    </a>
+                  </Button>
                 </motion.div>
 
                 <motion.div
@@ -138,16 +142,17 @@ export function HowItWorksSection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.2 }}
-                  className="relative"
+                  className="relative flex justify-center items-center"
                 >
-                  <div className="absolute -z-10 h-full w-full rounded-2xl bg-gradient-to-r from-primary/20 to-secondary/20 blur-xl" />
-                  <div className="overflow-hidden rounded-2xl md:w-lg md:h-[500px] border bg-background/50 p-2 shadow-xl backdrop-blur glass-effect">
+                  <div className="absolute -z-10 h-full w-full rounded-2xl blur-xl" />
+                  <div className="overflow-hidden max-w-[600px] w-full aspect-square rounded-2xl mx-auto">
                     <img
-                      src={step.image || "/placeholder.svg"}
-                      width={600}
-                      height={400}
+                      src={step.image}
                       alt={`${step.title} - PeUnique Payment Gateway Feature`}
                       className="rounded-xl w-full h-full object-cover"
+                      onError={(e) => {
+                        e.currentTarget.src = "/placeholder.svg";
+                      }}
                     />
                   </div>
                 </motion.div>
