@@ -88,7 +88,7 @@ export default function SupportPage() {
                         href="tel:+18001234567"
                         className="text-gray-900 dark:text-white font-medium hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
                       >
-                        +1 (800) 123-4567
+                        +91 7282823737
                       </a>
                     </div>
                   </div>
