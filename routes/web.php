@@ -9,7 +9,7 @@ Route::get('/', function () {
     return Inertia::render('Welcome',[
         'meta' => [
             'title' => 'Best Payment Gateway API Provider in Noida',
-            'description' => 'Your trusted partner for online payments in Noida.',
+            'description' => 'Our payment gateway integrate 150+ payment modes, offering secure transactions for e-commerce, education, retail, apps, wallets, and B2B services.',
         ],
     ]);
 });
