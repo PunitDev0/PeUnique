@@ -1,6 +1,6 @@
 "use client";
 
-import { Link } from "@inertiajs/react";
+import { Head, Link } from "@inertiajs/react";
 import { Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { HeroSection } from "@/components/HeroPage/hero-section";
@@ -22,7 +22,13 @@ import Layout from "@/components/Layout/Layout";
 export default function Home() {
   return (
     <Layout>
-
+       <Head>
+       <title>Best Payment Gateway API Provider in Noida</title>
+       <meta
+          name="description"
+          content="Our payment gateway integrate 150+ payment modes, offering secure transactions for e-commerce, education, retail, apps, wallets, and B2B services."
+        />
+     </Head>
       <div className="flex min-h-screen flex-col">
         <main className="mt-5 flex-1">
           <HeroSection />

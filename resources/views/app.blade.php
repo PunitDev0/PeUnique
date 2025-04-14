@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <title> Best Payment Gateway API Provider in Noida </title> -->
-    <meta name="description" content="Our payment gateway integrate 150+ payment modes, offering secure transactions for e-commerce, education, retail, apps, wallets, and B2B services."/>
     <meta name="keywords" content="Payment Gateway in India, E-Commerce and Education Payment Gateway">
     <link rel="canonical" href="https://www.peunique.com"/>
     <link rel="alternate" href="https://www.peunique.com"/>
