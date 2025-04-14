@@ -1,11 +1,12 @@
 import EducationAPIServicesPage from '@/components/Education/education'
+import Layout from '@/components/Layout/Layout'
 import React from 'react'
 
 function Education() {
   return (
-    <div>
+    <Layout>
       <EducationAPIServicesPage/>
-    </div>
+    </Layout>
   )
 }
 

@@ -17,15 +17,13 @@ import FeatureShowcase from "@/components/HeroPage/features";
 import Footer from "@/components/Layout/Footer";
 import PaymentGatewayInfo from "@/components/HeroPage/FAQSection";
 import CategorySection from "@/components/HeroPage/categorySection";
+import Layout from "@/components/Layout/Layout";
 
 export default function Home() {
   return (
-    <>
+    <Layout>
 
       <div className="flex min-h-screen flex-col">
-        <header>
-          <Navbar />
-        </header>
         <main className="mt-5 flex-1">
           <HeroSection />
           <HowItWorksSection />
@@ -38,8 +36,7 @@ export default function Home() {
           {/* <TestimonialSection /> */}
           <CtaSection />
         </main>
-        <Footer />
       </div>
-    </>
+    </Layout>
   );
 }

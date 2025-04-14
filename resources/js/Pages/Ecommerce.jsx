@@ -1,11 +1,12 @@
 import EcommercePage from '@/components/Ecommerce/ecommerce'
+import Layout from '@/components/Layout/Layout'
 import React from 'react'
 
 function Ecommerce() {
   return (
-    <div>
+    <Layout>
       <EcommercePage/>
-    </div>
+    </Layout>
   )
 }
 

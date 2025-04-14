@@ -1,11 +1,12 @@
 import ContactPage from '@/components/Contact/contact'
+import Layout from '@/components/Layout/Layout'
 import React from 'react'
 
 function Contact() {
   return (
-    <div>
+    <Layout>
       <ContactPage/>
-    </div>
+    </Layout>
   )
 }
 
