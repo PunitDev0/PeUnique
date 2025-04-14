@@ -39,9 +39,9 @@ export default function EcommerceAPIServicesPage() {
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-20 relative z-10">
           {/* H2 Sections */}
           <section className="mb-16 sm:mb-20">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-8 sm:mb-10 text-center tracking-tight">
+            {/* <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-8 sm:mb-10 text-center tracking-tight">
               Tailored Payment Gateway Solutions in Noida
-            </h2>
+            </h2> */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6">
               {[
                 {
