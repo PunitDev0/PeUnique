@@ -6,14 +6,14 @@ import { Head, Link } from "@inertiajs/react";
 import { Button } from "@/components/ui/button";
 import Navbar from "../Layout/Navbar";
 
-export default function EducationAPIServicesPage() {
+export default function EducationAPIServicesPage({meta}) {
   return (
     <>
      <Head>
-       <title>Best Payment Gateway Solution For Education Sector in India </title>
+       <title>{meta?.title}</title>
        <meta
           name="description"
-          content="Online fee Payment Solutions for schools, colleges, and educational institutions with 150+ Payment Modes including UPI, cards, net banking, and wallets."
+          content={meta?.description}
         />
      </Head>
       <Navbar />

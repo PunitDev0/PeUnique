@@ -2,10 +2,10 @@ import ContactPage from '@/components/Contact/contact'
 import Layout from '@/components/Layout/Layout'
 import React from 'react'
 
-function Contact() {
+function Contact({meta}) {
   return (
     <Layout>
-      <ContactPage/>
+      <ContactPage meta={meta}/>
     </Layout>
   )
 }

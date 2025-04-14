@@ -3,15 +3,15 @@
 import { ArrowRight, Award, BarChart3, Globe, Shield, Users, DollarSign, Link as LinkIcon, Repeat, Smartphone } from "lucide-react";
 import { Link, Head } from "@inertiajs/react";
 
-export default function AboutSection() {
+export default function AboutSection({meta}) {
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-white via-gray-50 to-gray-100 dark:from-gray-900 dark:via-black dark:to-purple-950/50 relative overflow-hidden">
       {/* SEO Head */}
       <Head>
-        <title>Best Payment Gateway Provider in India | About Us</title>
+        <title>{meta?.title}</title>
         <meta
           name="description"
-          content="PeUnique offers secure, seamless payment solutions for businesses with UPI, cards, QR payments, and more. Fast and hassle-free transactions."
+          content={meta?.description}
         />
       </Head>
 

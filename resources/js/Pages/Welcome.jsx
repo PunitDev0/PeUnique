@@ -19,14 +19,14 @@ import PaymentGatewayInfo from "@/components/HeroPage/FAQSection";
 import CategorySection from "@/components/HeroPage/categorySection";
 import Layout from "@/components/Layout/Layout";
 
-export default function Home() {
+export default function Home({meta}) {
   return (
     <Layout>
        <Head>
-       <title>Best Payment Gateway API Provider in Noida</title>
+       <title>{meta?.title}</title>
        <meta
           name="description"
-          content="Our payment gateway integrate 150+ payment modes, offering secure transactions for e-commerce, education, retail, apps, wallets, and B2B services."
+          content={meta?.description}
         />
      </Head>
       <div className="flex min-h-screen flex-col">

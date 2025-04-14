@@ -5,14 +5,14 @@ import { CreditCard, BarChart3, Shield, ArrowRight, Lock, Truck, Smartphone, Rep
 import { Link, Head } from "@inertiajs/react";
 import Navbar from "../Layout/Navbar";
 
-export default function EcommerceAPIServicesPage() {
+export default function EcommerceAPIServicesPage({meta}) {
   return (
     <>
       <Head>
-        <title>Best E-Commerce Payment Gateway System Provider in India</title>
+        <title>{meta?.title}</title>
         <meta
           name="description"
-          content="Simplify Digital Payments With An Advanced E-Commerce Payment Gateway, Supporting credit cards, UPI, Banking and Wallets for Smooth Transactions."
+          content={meta?.description}
         />
       </Head>
       <Navbar />

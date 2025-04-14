@@ -10,7 +10,7 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import Navbar from "../Layout/Navbar";
 
-export default function SupportPage() {
+export default function SupportPage({meta}) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -28,8 +28,8 @@ export default function SupportPage() {
   return (
     <>
       <Head>
-        <title>PeUnique Support</title>
-        <meta name="description" content="We are here to assist you with all your payment-related needs. Contact our dedicated support team for a smooth and hassle-free experience." />
+        <title>{meta?.title}</title>
+        <meta name="description" content={meta?.description} />
         <link rel="canonical" href="https://www.peunique.com/about" />
       </Head>
       <Navbar />

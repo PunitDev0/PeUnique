@@ -2,10 +2,10 @@ import EcommercePage from '@/components/Ecommerce/ecommerce'
 import Layout from '@/components/Layout/Layout'
 import React from 'react'
 
-function Ecommerce() {
+function Ecommerce({meta}) {
   return (
     <Layout>
-      <EcommercePage/>
+      <EcommercePage meta={meta}/>
     </Layout>
   )
 }
