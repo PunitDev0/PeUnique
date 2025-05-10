@@ -66,6 +66,9 @@ function Navbar() {
           <Link href="/about" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400">
             About
           </Link>
+          <Link href="/careers" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400">
+            Careers
+          </Link>
           <Link href="/contact" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400">
             Contact
           </Link>
