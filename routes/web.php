@@ -51,6 +51,10 @@ Route::get('/education', function () {
         ],
     ]);
 });
+
+Route::get('/careers', function () {
+    return Inertia::render('Career');
+});
 Route::get('/blog', function () {
     return Inertia::render('Blog',[
         'meta' => [

@@ -20,6 +20,7 @@ export function HowItWorksSection() {
   const steps = [
     {
       id: "ecommerce",
+      url: '/ecommerce',
       title: "E-commerce Payment Gateway",
       description:
         "We are the best Payment Gateway for eCommerce provider in Noida, offering fast and reliable payment processing for websites, online and offline stores—enhancing customer trust and driving higher sales.",
@@ -33,6 +34,7 @@ export function HowItWorksSection() {
     },
     {
       id: "education",
+      url: '/education',
       title: "Education Payment Gateway for Institutions",
       description:
         "Streamline fee collections with a Education Payment Gateway for Institutions in India designed for schools, colleges, universities, coaching centers, training institutes, and online learning platforms.",
@@ -46,6 +48,7 @@ export function HowItWorksSection() {
     },
     {
       id: "mobile_application",
+      url: '/about',
       title: "Payment Gateway for Mobile Application",
       description:
         "We offer the best payment gateway for mobile applications, ensuring secure, fast, and user-friendly payment experiences. Our solutions guarantee seamless transactions across mobile apps with multiple payment modes, including UPI and wallets.",
@@ -59,6 +62,7 @@ export function HowItWorksSection() {
     },
     {
       id: "healthcare",
+      url: '/about',
       title: "Healthcare Payment Gateway & Medical Billing API Solutions",
       description:
         "Secure and efficient Healthcare Payment Gateway & Medical Billing API Software. Designed for hospitals, clinics, labs, pharmacies, and telemedicine platforms, our solution supports 150+ payment modes including UPI, cards, net banking, wallets, and more.",
@@ -117,7 +121,7 @@ export function HowItWorksSection() {
                   transition={{ duration: 0.5 }}
                   className="space-y-4"
                 >
-                  <h3 className="text-2xl font-bold">{step.title}</h3>
+                  <a href={step.url} className="text-2xl font-bold">{step.title}</a>
                   <p className="text-muted-foreground">{step.description}</p>
 
                   <div className="space-y-2 mt-6">
