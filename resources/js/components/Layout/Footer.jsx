@@ -333,7 +333,7 @@ const Footer = () => {
               <a href="https://www.instagram.com/Peuniquepaymentsolution" className="text-muted-foreground hover:text-primary transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="https://www.linkedin.com/company/peunique-payment-solution-pvt" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/company/peunique-payment-solution-pvt-ltd" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
               <a href="https://www.youtube.com/@Peuniquepaymentsolution" className="text-muted-foreground hover:text-primary transition-colors">
