@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <title> Best Payment Gateway API Provider in Noida </title> -->
     <meta name="google-site-verification" content="Qe-JqwVr8GR7ngT-M8yGFneOZ_ZVy-ehhKX9NsH59aA" />
     <meta name="keywords" content="Payment Gateway in India, E-Commerce and Education Payment Gateway">
     <link rel="canonical" href="https://www.peunique.com"/>
@@ -25,7 +24,7 @@ Sector 63- UP 201301"/>
     <meta name="YahooSeeker" content="INDEX, FOLLOW"/>
     <meta name="msnbot" content="INDEX, FOLLOW"/>
     <meta name="googlebot" content="INDEX, FOLLOW"/>
-    <link rel="shortcut icon" href="https://www.peunique.com/assets/img/logo.png" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="https://www.peunique.com/assets/img/logo.png" type="image/x-icon"> -->
    
         <!-- Scripts -->
         @routes

@@ -1,8 +1,9 @@
 import React from "react";
-import { Linkedin, Zap } from "lucide-react";
+import { Linkedin, Youtube, Zap } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { FaPinterest } from 'react-icons/fa';
 import {
   Facebook,
   Twitter,
@@ -323,18 +324,25 @@ const Footer = () => {
           <div>
             <h3 className="mb-4 text-sm font-semibold text-foreground">Find Us Online</h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.facebook.com/peuniquepaymentsolution/" className="text-muted-foreground hover:text-primary transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://x.com/pe_unique" className="text-muted-foreground hover:text-primary transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.instagram.com/Peuniquepaymentsolution" className="text-muted-foreground hover:text-primary transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/company/peunique-payment-solution-pvt" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
+              <a href="https://www.youtube.com/@Peuniquepaymentsolution" className="text-muted-foreground hover:text-primary transition-colors">
+                <Youtube className="h-5 w-5" />
+              </a>
+              <a href="https://www.youtube.com/@Peuniquepaymentsolution" className="text-muted-foreground hover:text-primary transition-colors">
+                <FaPinterest className="h-5 w-5" />
+              </a>
+              
             </div>
           </div>
         </div>
