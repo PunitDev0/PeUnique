@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SitemapController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -63,5 +64,7 @@ Route::get('/blog', function () {
         ],
     ]);
 });
+
+Route::get('/sitemap.xml', [SitemapController::class, 'index']);
 
 
