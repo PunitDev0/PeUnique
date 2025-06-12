@@ -108,5 +108,65 @@ export const posts = [
     tags: ["Payment Gateway", "Features", "Trends"],
     image: "https://ic.pics.livejournal.com/ext_6726001/100879351/1961/1961_800.png",
     link: "https://ext-6726001.livejournal.com/1611.html?newpost=1"
-  }
+  },
+  {
+    id: 10,
+    title: "Multiple Payment Solutions for Every Business",
+    content: "In today’s rapidly evolving digital economy, offering Multiple Payment Solutions for Every Business is not just a convenience — it’s a necessity. Whether you’re a budding e-commerce startup, a traditional retailer,",
+    author: "Komal Singh",
+    date: "February 5, 2025",
+    readTime: "5 min read",
+    category: "Technology",
+    tags: ["Payment Gateway", "Features", "Trends"],
+    image: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*liu8mAktEVRu6ZpCwMqg2Q.png",
+    link: "https://medium.com/@komalsinghnikatby/multiple-payment-solutions-for-every-business-05ad50ee5b8b"
+  },
+  {
+    id: 11,
+    title: "Best E-Commerce Payment Gateway System Provider in India",
+    content: "In today’s fast-paced digital marketplace, selecting the Best E-Commerce Payment Gateway System Provider in India is crucial for any online business striving for growth and customer satisfaction.",
+    author: "Komal Singh",
+    date: "February 5, 2025",
+    readTime: "5 min read",
+    category: "Technology",
+    tags: ["Payment Gateway", "Features", "Trends"],
+    image: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*evaDjlnQY9-2usy2kAdUcA.png",
+    link: "https://medium.com/@komalsinghnikatby/best-e-commerce-payment-gateway-system-provider-in-india-083814098052"
+  },
+  {
+    id: 12,
+    title: "https://peunique.com/contactBest E-Commerce Payment Gateway System Provider in India",
+    content: "In today’s fast-paced digital world, e-commerce has become the backbone of numerous businesses, especially in India. With the continuous growth of online shopping, having a robust and efficient payment gateway system has become a critical factor in driving business success",
+    author: "Komal Singh",
+    date: "February 5, 2025",
+    readTime: "5 min read",
+    category: "Technology",
+    tags: ["Payment Gateway", "Features", "Trends"],
+    image: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*liEkNzTnsDhWc_DUinw0sQ.png",
+    link: "https://medium.com/@komalsinghnikatby/https-peunique-com-contactbest-e-commerce-payment-gateway-system-provider-in-india-eea4452876fc"
+  },
+  {
+    id: 13,
+    title: "Secure Payment Gateway for Every Business in India",
+    content: "In today’s fast-paced digital economy, having a Secure Payment Gateway is not just a convenience — it’s a necessity for every business in India. Whether you’re running an e-commerce platform, managing educational institutions, developing a mobile application",
+    author: "Komal Singh",
+    date: "February 5, 2025",
+    readTime: "5 min read",
+    category: "Technology",
+    tags: ["Payment Gateway", "Features", "Trends"],
+    image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*3uaJkLyj_rBZ-SyBpbqO1w.png",
+    link: "https://medium.com/@komalsinghnikatby/secure-payment-gateway-for-every-business-in-india-b2b401d5e90b"
+  },
+  {
+    id: 14,
+    title: "Best E-Commerce Payment Gateway System Provider in India",
+    content: "In the dynamic and ever-evolving world of online commerce, having a robust and secure E-Commerce Payment Gateway System is not just a necessity — it’s the backbone of your digital business.",
+    author: "Komal Singh",
+    date: "February 5, 2025",
+    readTime: "5 min read",
+    category: "Technology",
+    tags: ["Payment Gateway", "Features", "Trends"],
+    image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*GQTIFse40WnxGCtqHM9opA.png",
+    link: "https://medium.com/@komalsinghnikatby/best-e-commerce-payment-gateway-system-provider-in-india-a072373f8996"
+  },
 ];
