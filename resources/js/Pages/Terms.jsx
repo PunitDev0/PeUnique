@@ -1,8 +1,10 @@
+import Layout from '@/components/Layout/Layout';
 import React from 'react';
 
 const TermsAndConditions = () => {
   return (
-    <div className="min-h-screen bg-gray-100 py-10 px-4 sm:px-6 lg:px-8">
+ <Layout>
+       <div className="min-h-screen bg-gray-100 py-10 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-8">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
           Peunique Terms and Conditions
@@ -275,14 +277,10 @@ const TermsAndConditions = () => {
           </div>
         </section>
 
-        <footer className="text-center text-gray-600 mt-8">
-          <p>
-            For comments or suggestions regarding these Terms or the Platform, please contact our 24×7
-            Helpdesk at <a href="mailto:help@peunique.in" className="text-blue-600 hover:underline">help@peunique.in</a>.
-          </p>
-        </footer>
+       
       </div>
     </div>
+ </Layout>
   );
 };
 
