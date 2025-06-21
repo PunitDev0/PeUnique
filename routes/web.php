@@ -64,6 +64,14 @@ Route::get('/blog', function () {
         ],
     ]);
 });
+Route::get('/terms&conditions', function () {
+    return Inertia::render('Terms',[
+        'meta' => [
+            'title' => '',
+            'description' => '',
+        ],
+    ]);
+});
 
 Route::get('/sitemap.xml', [SitemapController::class, 'index']);
 
