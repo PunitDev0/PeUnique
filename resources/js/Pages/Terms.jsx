@@ -19,8 +19,7 @@ const TermsAndConditions = () => {
             does not require any physical or digital signatures. These Terms are legally binding and
             govern your use of “Peunique” and/or the “Platform” created, owned, and operated by SRS
             Live Technologies Private Limited, a private limited company incorporated under the laws of
-            India, having its registered office at E-1 / B-1, Mohan Co-operative Industrial Estate
-            Area, Mathura Road, New Delhi – 110044 (“Peunique” or “Company”).
+            India, having its registered office at H-169,F-04,Sector-63, Noida, Uttar Pardesh-201301
           </p>
           <p className="text-gray-600 leading-relaxed mt-4">
             Please read these Terms carefully before using the Platform and/or availing any of the
@@ -238,7 +237,7 @@ const TermsAndConditions = () => {
               <h3 className="text-xl font-medium text-gray-700">xvii. Governing Law and Dispute Resolution</h3>
               <p className="text-gray-600 leading-relaxed">
                 These Terms are governed by the laws of India, with exclusive jurisdiction in the
-                competent courts of New Delhi, India.
+                competent courts of Noida, India.
               </p>
             </div>
             <div>
@@ -262,8 +261,7 @@ const TermsAndConditions = () => {
                 <li>
                   <strong>Notice:</strong> Notices to Users may be sent via email, mail, or website
                   posts. Notices to Peunique must be sent to the Legal Department, Peunique India
-                  Limited, 1st Floor, E1/B1, Mohan Cooperative Industrial Estate, New Delhi – 110044,
-                  India.
+                  Limited, H-169,F-04,Sector-63, Noida, Uttar Pardesh-201301
                 </li>
                 <li>
                   <strong>Waiver:</strong> Failure to enforce any right does not constitute a waiver.

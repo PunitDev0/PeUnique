@@ -100,9 +100,9 @@ export default function SupportPage({meta}) {
                     <div>
                       <p className="text-sm text-gray-500 dark:text-gray-400">Address</p>
                       <address className="not-italic text-gray-900 dark:text-white font-medium">
-                        A 43, A Block, Sector 63 Road,
+                      H-169,F-04,Sector-63
                         <br />
-                        Sector 63- UP 201301
+                        Noida, Uttar Pardesh-201301
                       </address>
                     </div>
                   </div>
