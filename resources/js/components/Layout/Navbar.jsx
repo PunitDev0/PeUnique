@@ -56,7 +56,7 @@ function Navbar() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6">
-        
+
           <Link href="/ecommerce" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400">
             Ecommerce
           </Link>
@@ -81,14 +81,14 @@ function Navbar() {
         <div className="flex items-center gap-4">
           <div className="sm:flex hidden">
             {/* <ThemeToggle /> */}
-            <Link href="https://banking.peunique.com/login">
+            <a href="https://banking.peunique.com/login">
               <Button
                 size="sm"
                 className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white transition-all duration-300"
               >
                 Get Started
               </Button>
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -144,14 +144,14 @@ function Navbar() {
               </Link>
             </li>
             <li className="flex gap-4">
-              <Link href="https://banking.peunique.com/login">
+              <a href="https://banking.peunique.com/login">
                 <Button
                   size="sm"
                   className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white transition-all duration-300"
                 >
                   Get Started
                 </Button>
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>
