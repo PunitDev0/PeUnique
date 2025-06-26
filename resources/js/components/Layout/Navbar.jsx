@@ -149,12 +149,7 @@ function Navbar() {
               </Link>
             </li>
             <li className="flex gap-4">
-              <Link href="/login">
-                <Button variant="ghost" size="sm" className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400">
-                  Log in
-                </Button>
-              </Link>
-              <Link href="/signup">
+              <Link href="https://banking.peunique.com/login">
                 <Button
                   size="sm"
                   className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white transition-all duration-300"
