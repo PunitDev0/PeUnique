@@ -86,7 +86,7 @@ function Navbar() {
                 size="sm"
                 className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white transition-all duration-300"
               >
-                Get Started
+                Login
               </Button>
             </a>
           </div>
@@ -149,7 +149,7 @@ function Navbar() {
                   size="sm"
                   className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white transition-all duration-300"
                 >
-                  Get Started
+                  Login
                 </Button>
               </a>
             </li>
