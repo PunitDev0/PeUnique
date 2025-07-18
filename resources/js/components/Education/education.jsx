@@ -5,6 +5,7 @@ import { CreditCard, BarChart3, Shield, ArrowRight, BookOpen, GraduationCap } fr
 import { Head, Link } from "@inertiajs/react";
 import { Button } from "@/components/ui/button";
 import Navbar from "../Layout/Navbar";
+import { HeroSection } from "../HeroPage/hero-section";
 
 export default function EducationAPIServicesPage({meta}) {
   return (
@@ -17,32 +18,13 @@ export default function EducationAPIServicesPage({meta}) {
         />
      </Head>
       <Navbar />
+      <HeroSection title={ 'Smart Payment Solutions Trusted by Leading Educational Institutions in India'} description={"PeUnique empowers 1000+ schools, colleges, universities, coaching institutes, and online learning centers with secure and streamlined fee collection. Our education-specific payment gateway handles your payments end-to-end—so you can focus on delivering quality education, not managing transactions."} />
       <div className="min-h-screen w-full bg-gradient-to-b from-white to-gray-100 dark:from-black dark:to-purple-950/40 relative overflow-hidden">
         {/* Decorative Elements */}
         <div className="absolute top-20 right-[10%] w-72 h-72 rounded-full bg-purple-200/30 dark:bg-purple-600/10 blur-[100px]" />
         <div className="absolute bottom-40 left-[5%] w-96 h-96 rounded-full bg-purple-100/40 dark:bg-purple-500/10 blur-[120px]" />
 
-        {/* Header */}
-        <header className="relative pt-20 pb-10 px-4 text-center">
-          <div className="inline-flex items-center px-3 py-1 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-sm font-medium mb-6">
-            <span className="mr-2 bg-purple-500 rounded-full w-2 h-2"></span>
-            Education Payment Solutions
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 ">
-            Smart Payment Solutions Trusted by Leading Educational Institutions in India
-          </h1>
-          <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            PeUnique empowers 1000+ schools, colleges, universities, coaching institutes, and online learning centers with secure and streamlined fee collection. Our education-specific payment gateway handles your payments end-to-end—so you can focus on delivering quality education, not managing transactions.
-          </p>
-          <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild>
-              <Link href="/signup">🎓 Start Today – Sign Up Now</Link>
-            </Button>
-            <Button asChild variant="outline">
-              <Link href="/contact">📞 Need Help? – Get in Touch</Link>
-            </Button>
-          </div>
-        </header>
+
 
         {/* Main Content */}
         <main className="max-w-7xl mx-auto px-4 pb-20 relative z-10">

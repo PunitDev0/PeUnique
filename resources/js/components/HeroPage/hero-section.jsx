@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle2, ChevronRight, IndianRupee } from "lucide-reac
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
-export function HeroSection() {
+export function HeroSection({title, description}) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -56,13 +56,17 @@ export function HeroSection() {
               </motion.div>
 
               <motion.h1
-                className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl"
+                className={`text-3xl font-bold tracking-tighter ${title ? "lg:text-4xl" : "lg:text-6xl"} sm:text-4xl md:text-5xl `}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
               >
-                Secure Payment Gateway for Every{" "}
-                <span className="gradient-text">Business in India</span>
+               {title ? title : (
+                <>
+                  Secure Payment Gateway for Every{" "}
+                  <span className="gradient-text">Business in India</span>
+                </>
+               )}
               </motion.h1>
               <motion.p
                 className="text-base text-muted-foreground sm:text-lg md:text-xl max-w-[600px]"
@@ -70,7 +74,11 @@ export function HeroSection() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-                Discover the best payment gateway provider in India, integrating 150+ payment modes including UPI, wallets, and cards. Perfect for e-commerce, education, retail, and mobile apps with secure, seamless transactions.
+               {description ? description : (
+                <>
+                   Discover the best payment gateway provider in India, integrating 150+ payment modes including UPI, wallets, and cards. Perfect for e-commerce, education, retail, and mobile apps with secure, seamless transactions.
+                </>
+               )}
               </motion.p>
             </div>
 
@@ -101,7 +109,7 @@ export function HeroSection() {
             >
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 text-primary" />
-                <span>No credit card needed</span>
+                <span>Instant Fee Alerts</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 text-primary" />
@@ -109,37 +117,14 @@ export function HeroSection() {
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 text-primary" />
-                <span>Bank-grade security</span>
+                <span>Fee History</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 text-primary" />
-                <span>24/7 support team</span>
+                <span>Fast & Secure Transactions </span>
               </div>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.8 }}
-              className="flex items-center gap-3 text-sm"
-            >
-              <div className="flex -space-x-2">
-                {[1, 2, 3, 4].map((i) => (
-                  <div
-                    key={i}
-                    className="h-6 w-6 sm:h-8 sm:w-8 rounded-full border-2 border-background bg-muted overflow-hidden"
-                  >
-                    <img
-                      src={`/placeholder.svg?height=32&width=32&text=${i}`}
-                      alt={`Happy customer ${i} using payment gateway`}
-                    />
-                  </div>
-                ))}
-              </div>
-              <div className="text-muted-foreground">
-                <span className="font-medium text-foreground">10,000+</span> happy users in India
-              </div>
-            </motion.div>
           </motion.div>
 
           <motion.div

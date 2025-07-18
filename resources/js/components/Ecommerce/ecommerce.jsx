@@ -4,6 +4,7 @@ import React from "react";
 import { CreditCard, BarChart3, Shield, ArrowRight, Lock, Truck, Smartphone, Repeat, DollarSign, Link as LinkIcon, Globe, Award, Users } from "lucide-react";
 import { Link, Head } from "@inertiajs/react";
 import Navbar from "../Layout/Navbar";
+import { HeroSection } from "../HeroPage/hero-section";
 
 export default function EcommerceAPIServicesPage({meta}) {
   return (
@@ -16,13 +17,14 @@ export default function EcommerceAPIServicesPage({meta}) {
         />
       </Head>
       <Navbar />
+      <HeroSection title={ ' The Most Secure Digital Payment System for E-Commerce in Noida'} description={"  Simplify e-commerce with a secure digital payment Gateway supporting 150+ modes, including UPI, QR Pay, Link Pay, Cards, Payouts, and Wallets."} />
       <div className="min-h-screen w-full bg-gradient-to-b from-white to-gray-100 dark:from-black dark:to-purple-950/40 relative overflow-hidden">
         {/* Decorative Elements */}
         <div className="absolute top-10 sm:top-20 right-[5%] sm:right-[10%] w-64 sm:w-72 h-64 sm:h-72 rounded-full bg-purple-200/30 dark:bg-purple-600/10 blur-[80px] sm:blur-[100px] animate-pulse" />
         <div className="absolute bottom-20 sm:bottom-40 left-[2%] sm:left-[5%] w-72 sm:w-96 h-72 sm:h-96 rounded-full bg-purple-100/40 dark:bg-purple-500/10 blur-[100px] sm:blur-[120px] animate-pulse" />
 
         {/* Header */}
-        <header className="relative pt-16 sm:pt-20 pb-8 sm:pb-10 px-4 sm:px-6 lg:px-8 text-center">
+        {/* <header className="relative pt-16 sm:pt-20 pb-8 sm:pb-10 px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center px-3 py-1 sm:px-4 sm:py-2 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-xs sm:text-sm font-medium mb-4 sm:mb-6 shadow-md hover:shadow-lg transition-shadow duration-300">
             <span className="mr-2 bg-purple-500 rounded-full w-1.5 h-1.5 sm:w-2 sm:h-2 animate-bounce" />
             eCommerce Payment Solutions
@@ -33,7 +35,7 @@ export default function EcommerceAPIServicesPage({meta}) {
           <p className="text-gray-600 dark:text-gray-300 max-w-xl sm:max-w-2xl mx-auto text-sm sm:text-base leading-relaxed font-light">
             Simplify e-commerce with a secure digital payment Gateway supporting 150+ modes, including UPI, QR Pay, Link Pay, Cards, Payouts, and Wallets.
           </p>
-        </header>
+        </header> */}
 
         {/* Main Content */}
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-20 relative z-10">
