@@ -8,6 +8,8 @@
     <meta name="keywords" content="Payment Gateway in India, E-Commerce and Education Payment Gateway">
     <link rel="canonical" href="https://www.peunique.com"/>
     <link rel="alternate" href="https://www.peunique.com"/>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VK0TEYD8BX"></script> 
+    <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-VK0TEYD8BX'); </script>
     <meta name="Geography" content="Peunique Payment Solution Pvt Ltd , A 43, A Block, Sector 63 Road,
 Sector 63- UP 201301"/>
     <meta name="Language" content="English"/>
