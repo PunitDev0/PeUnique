@@ -39,7 +39,7 @@ export default function EducationAPIServicesPage({meta}) {
                   icon: <CreditCard className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
                   title: "Schools, Colleges & Universities",
                   description: "Simplify tuition fee collection, admission charges, exam fees, and hostel payments with seamless integration customized for academic institutions.",
-                  image: "/assets/Peunique45.png",
+                  image: "/assets/friends-with-smile-happy-emotions-university.jpg",
                 },
                 {
                   icon: <Shield className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
@@ -51,7 +51,7 @@ export default function EducationAPIServicesPage({meta}) {
                   icon: <BarChart3 className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
                   title: "Online Learning Platforms & Ed-Tech Companies",
                   description: "Offer flexible payment options for online courses, subscriptions, and learning tools—fully optimized for web and mobile users.",
-                  image: "/assets/friends-with-smile-happy-emotions-university.jpg",
+                  image: "/assets/Peunique45.png",
                 },
                 {
                   icon: <CreditCard className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
