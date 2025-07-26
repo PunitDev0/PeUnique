@@ -17,7 +17,7 @@ export default function EcommerceAPIServicesPage({meta}) {
         />
       </Head>
       <Navbar />
-      <HeroSection title={ ' The Most Secure Digital Payment System for E-Commerce in Noida'} description={"  Simplify e-commerce with a secure digital payment Gateway supporting 150+ modes, including UPI, QR Pay, Link Pay, Cards, Payouts, and Wallets."}  alt={'education secure payment gateway'} />
+      <HeroSection title={ ' The Most Secure Digital Payment System for E-Commerce in Noida'} description={"  Simplify e-commerce with a secure digital payment Gateway supporting 150+ modes, including UPI, QR Pay, Link Pay, Cards, Payouts, and Wallets."}  alt={'ecommerce secure payment gateway'} />
       <div className="min-h-screen w-full bg-gradient-to-b from-white to-gray-100 dark:from-black dark:to-purple-950/40 relative overflow-hidden">
         {/* Decorative Elements */}
         <div className="absolute top-10 sm:top-20 right-[5%] sm:right-[10%] w-64 sm:w-72 h-64 sm:h-72 rounded-full bg-purple-200/30 dark:bg-purple-600/10 blur-[80px] sm:blur-[100px] animate-pulse" />
