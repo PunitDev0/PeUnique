@@ -18,7 +18,7 @@ export default function EducationAPIServicesPage({meta}) {
         />
      </Head>
       <Navbar />
-      <HeroSection title={ 'Smart Payment Solutions Trusted by Leading Educational Institutions in India'} description={"PeUnique empowers 1000+ schools, colleges, universities, coaching institutes, and online learning centers with secure and streamlined fee collection. Our education-specific payment gateway handles your payments end-to-end—so you can focus on delivering quality education, not managing transactions."} />
+      <HeroSection title={ 'Smart Payment Solutions Trusted by Leading Educational Institutions in India'} description={"PeUnique empowers 1000+ schools, colleges, universities, coaching institutes, and online learning centers with secure and streamlined fee collection. Our education-specific payment gateway handles your payments end-to-end—so you can focus on delivering quality education, not managing transactions."} alt={'education secure payment gateway'} />
       <div className="min-h-screen w-full bg-gradient-to-b from-white to-gray-100 dark:from-black dark:to-purple-950/40 relative overflow-hidden">
         {/* Decorative Elements */}
         <div className="absolute top-20 right-[10%] w-72 h-72 rounded-full bg-purple-200/30 dark:bg-purple-600/10 blur-[100px]" />
@@ -37,37 +37,37 @@ export default function EducationAPIServicesPage({meta}) {
               {[
                 {
                   icon: <CreditCard className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
-                  title: "Schools, Colleges & Universities",
+                  title: "Schools, Colleges & Universities Payment Gateway",
                   description: "Simplify tuition fee collection, admission charges, exam fees, and hostel payments with seamless integration customized for academic institutions.",
                   image: "/assets/friends-with-smile-happy-emotions-university.jpg",
                 },
                 {
                   icon: <Shield className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
-                  title: "Coaching & Training Institutes",
+                  title: "Coaching & Training Institutes Payment Gateway",
                   description: "Collect course fees, workshop registrations, and recurring payments online using UPI, Cards, Net Banking, Wallets, and more.",
                   image: "/assets/people-taking-part-business-event.jpg",
                 },
                 {
                   icon: <BarChart3 className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
-                  title: "Online Learning Platforms & Ed-Tech Companies",
+                  title: "Online Learning Platforms & Ed-Tech Companies Payment Gateway",
                   description: "Offer flexible payment options for online courses, subscriptions, and learning tools—fully optimized for web and mobile users.",
                   image: "/assets/PeUnique45.png",
                 },
                 {
                   icon: <CreditCard className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
-                  title: "ERP & CRM Software Providers for Education",
+                  title: "ERP & CRM Software Providers for Education Payment Gateway",
                   description: "Easily integrate PeUnique’s gateway with your ERP or CRM systems for automated fee reconciliation, real-time reporting, and enhanced control.",
                   image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
                 },
                 {
                   icon: <Shield className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
-                  title: "Academic Institutions & Tuition Centers",
+                  title: "Academic Institutions & Tuition Centers Payment Gateway",
                   description: "Enable secure, fast, and organized collections for tuition, admission fees, and extra-curricular programs—all with a simple setup.",
                   image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
                 },
                 {
                   icon: <BarChart3 className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
-                  title: "Educational Websites & Portals",
+                  title: "Educational Websites & Portals Payment Gateway",
                   description: "Embed our payment solutions for donations, paid resources, registrations, or course access on your informational website or portal.",
                   image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
                 },

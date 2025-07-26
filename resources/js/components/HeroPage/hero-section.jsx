@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle2, ChevronRight, IndianRupee } from "lucide-reac
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
-export function HeroSection({ title, description }) {
+export function HeroSection({ title, description, alt }) {
   const [mounted, setMounted] = useState(false);
   const currentUrl = window.location.href;
   const lastSegment = currentUrl.split("/").filter(Boolean).pop(); // "ecommerce"
@@ -153,7 +153,7 @@ export function HeroSection({ title, description }) {
                 src={getImageSrc()}
                 width={600}
                 height={600}
-                alt="Secure Payment Gateway Dashboard Preview"
+                alt={alt ? alt : "Secure Payment Gateway Dashboard Preview"}
                 className="rounded-xl w-full "
               />
               <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/10" />
