@@ -51,7 +51,7 @@ export default function EducationAPIServicesPage({meta}) {
                   icon: <BarChart3 className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
                   title: "Online Learning Platforms & Ed-Tech Companies",
                   description: "Offer flexible payment options for online courses, subscriptions, and learning tools—fully optimized for web and mobile users.",
-                  image: "/assets/Peunique45.png",
+                  image: "/assets/PeUnique45.png",
                 },
                 {
                   icon: <CreditCard className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
