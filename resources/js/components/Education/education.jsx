@@ -39,19 +39,19 @@ export default function EducationAPIServicesPage({meta}) {
                   icon: <CreditCard className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
                   title: "Schools, Colleges & Universities",
                   description: "Simplify tuition fee collection, admission charges, exam fees, and hostel payments with seamless integration customized for academic institutions.",
-                  image: "https://plus.unsplash.com/premium_photo-1682104376321-63afb07e8f97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                  image: "/assets/e-learing-distance-education-icons-interface.jpg",
                 },
                 {
                   icon: <Shield className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
                   title: "Coaching & Training Institutes",
                   description: "Collect course fees, workshop registrations, and recurring payments online using UPI, Cards, Net Banking, Wallets, and more.",
-                  image: "https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZmluYW5jaWFsfGVufDB8fDB8fHww",
+                  image: "/assets/friends-with-smile-happy-emotions-university.jpg",
                 },
                 {
                   icon: <BarChart3 className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
                   title: "Online Learning Platforms & Ed-Tech Companies",
                   description: "Offer flexible payment options for online courses, subscriptions, and learning tools—fully optimized for web and mobile users.",
-                  image: "https://plus.unsplash.com/premium_photo-1682310056521-cc7357fc72cf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmluYW5jaW5nJTIwc29sdXRpb258ZW58MHx8MHx8fDA%3D",
+                  image: "/assets/people-taking-part-business-event.jpg",
                 },
                 {
                   icon: <CreditCard className="h-8 w-8 text-purple-600 dark:text-purple-400" />,

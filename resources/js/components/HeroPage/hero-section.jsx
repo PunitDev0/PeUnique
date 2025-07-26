@@ -5,8 +5,22 @@ import { ArrowRight, CheckCircle2, ChevronRight, IndianRupee } from "lucide-reac
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
-export function HeroSection({title, description}) {
+export function HeroSection({ title, description }) {
   const [mounted, setMounted] = useState(false);
+  const currentUrl = window.location.href;
+  const lastSegment = currentUrl.split("/").filter(Boolean).pop(); // "ecommerce"
+
+  // Conditional image selection
+  const getImageSrc = () => {
+    switch (lastSegment) {
+      case "ecommerce":
+        return "/assets/peunique40.png";
+      case "education":
+        return "/assets/peunique42.png";
+      default:
+        return "/assets/DashboardPreview.jpeg";
+    }
+  };
 
   useEffect(() => {
     setMounted(true);
@@ -51,7 +65,7 @@ export function HeroSection({title, description}) {
                 className="inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs sm:text-sm font-medium text-primary"
               >
                 <span className="mr-1 flex h-2 w-2 rounded-full bg-primary"></span>
-               <p> Trusted by 10,000+ Businesses in India</p>
+                <p> Trusted by 10,000+ Businesses in India</p>
                 <ChevronRight className="ml-1 h-3 w-3 sm:h-4 sm:w-4" />
               </motion.div>
 
@@ -61,12 +75,12 @@ export function HeroSection({title, description}) {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
               >
-               {title ? title : (
-                <>
-                  Secure Payment Gateway for Every{" "}
-                  <span className="gradient-text">Business in India</span>
-                </>
-               )}
+                {title ? title : (
+                  <>
+                    Secure Payment Gateway for Every{" "}
+                    <span className="gradient-text">Business in India</span>
+                  </>
+                )}
               </motion.h1>
               <motion.p
                 className="text-base text-muted-foreground sm:text-lg md:text-xl max-w-[600px]"
@@ -74,11 +88,11 @@ export function HeroSection({title, description}) {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-               {description ? description : (
-                <>
-                   Discover the best payment gateway provider in India, integrating 150+ payment modes including UPI, wallets, and cards. Perfect for e-commerce, education, retail, and mobile apps with secure, seamless transactions.
-                </>
-               )}
+                {description ? description : (
+                  <>
+                    Discover the best payment gateway provider in India, integrating 150+ payment modes including UPI, wallets, and cards. Perfect for e-commerce, education, retail, and mobile apps with secure, seamless transactions.
+                  </>
+                )}
               </motion.p>
             </div>
 
@@ -136,11 +150,11 @@ export function HeroSection({title, description}) {
             <div className="absolute -z-10 h-64 w-64 rounded-full bg-primary/20 blur-3xl" />
             <div className="relative w-full max-w-[500px] sm:max-w-[600px] overflow-hidden rounded-2xl border bg-background/50 shadow-xl">
               <img
-                src="/assets/DashbaordPreview.jpeg"
+                src={getImageSrc()}
                 width={600}
                 height={600}
                 alt="Secure Payment Gateway Dashboard Preview"
-                className="rounded-xl w-full h-auto"
+                className="rounded-xl w-full "
               />
               <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/10" />
 
@@ -192,29 +206,33 @@ export function HeroSection({title, description}) {
         </div>
 
         {/* Stats section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 1 }}
-          className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-6"
-        >
-          <div className="rounded-lg border bg-card p-3 sm:p-4 text-center">
-            <div className="text-xl sm:text-2xl font-bold">$2.5B+</div>
-            <div className="text-xs sm:text-sm text-muted-foreground">Assets Managed Securely</div>
-          </div>
-          <div className="rounded-lg border bg-card p-3 sm:p-4 text-center">
-            <div className="text-xl sm:text-2xl font-bold">98%</div>
-            <div className="text-xs sm:text-sm text-muted-foreground">Customer Satisfaction Rate</div>
-          </div>
-          <div className="rounded-lg border bg-card p-3 sm:p-4 text-center">
-            <div className="text-xl sm:text-2xl font-bold">10K+</div>
-            <div className="text-xs sm:text-sm text-muted-foreground">Active Business Users</div>
-          </div>
-          <div className="rounded-lg border bg-card p-3 sm:p-4 text-center">
-            <div className="text-xl sm:text-2xl font-bold">24/7</div>
-            <div className="text-xs sm:text-sm text-muted-foreground">Support for Payments</div>
-          </div>
-        </motion.div>
+        {lastSegment !== 'education' && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 1 }}
+            className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-6"
+          >
+            <div className="rounded-lg border bg-card p-3 sm:p-4 text-center flex items-center justify-center flex-col">
+              <div className="text-xl sm:text-2xl font-bold flex items-center text-center"><IndianRupee size={20}/><p>2.5B+</p></div>
+              <div className="text-xs sm:text-sm text-muted-foreground">Assets Managed Securely</div>
+            </div>
+            <div className="rounded-lg border bg-card p-3 sm:p-4 text-center">
+              <div className="text-xl sm:text-2xl font-bold">98%</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">Customer Satisfaction Rate</div>
+            </div>
+            <div className="rounded-lg border bg-card p-3 sm:p-4 text-center">
+              <div className="text-xl sm:text-2xl font-bold">10K+</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">Active Business Users</div>
+            </div>
+            <div className="rounded-lg border bg-card p-3 sm:p-4 text-center">
+              <div className="text-xl sm:text-2xl font-bold">24/7</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">Support for Payments</div>
+            </div>
+          </motion.div>
+
+        )}
+
       </div>
     </section>
   );
