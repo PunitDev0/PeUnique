@@ -181,7 +181,8 @@ export function HeroSection({ title, description }) {
               </motion.div>
 
               {/* Stats card */}
-              <motion.div
+              {lastSegment !== 'education' && (
+                <motion.div
                 className="absolute bottom-2 right-0 w-40 sm:w-48 rounded-lg bg-white dark:bg-black shadow-lg p-2 sm:p-3"
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -189,24 +190,25 @@ export function HeroSection({ title, description }) {
               >
                 <div className="text-xs text-muted-foreground mb-1">Monthly Savings</div>
                 <div className="text-base sm:text-lg font-bold flex items-center">
-                  <IndianRupee size={12} className="sm:h-15" /> 1,240.50
+                  <IndianRupee size={12} className="sm:h-15" />{lastSegment == "ecommerce" ? '3,240.50' : '2,240.50'} 
                 </div>
                 <div className="mt-1 h-1.5 w-full bg-muted rounded-full overflow-hidden">
                   <div className="h-full w-3/4 bg-primary rounded-full"></div>
                 </div>
                 <div className="mt-1 flex justify-between text-xs">
                   <span className="text-muted-foreground flex items-center">
-                    Target: <IndianRupee size={12} /> 1500
+                    Target: <IndianRupee size={12} /> {lastSegment == "ecommerce" ? '7,379' : '1,240.50'} 
                   </span>
                   <span className="text-primary font-medium">82%</span>
                 </div>
               </motion.div>
+              ) }
             </div>
           </motion.div>
         </div>
 
         {/* Stats section */}
-        {lastSegment !== 'education' && (
+        {lastSegment !== 'education' && lastSegment !== 'ecommerce' && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

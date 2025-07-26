@@ -39,19 +39,19 @@ export default function EducationAPIServicesPage({meta}) {
                   icon: <CreditCard className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
                   title: "Schools, Colleges & Universities",
                   description: "Simplify tuition fee collection, admission charges, exam fees, and hostel payments with seamless integration customized for academic institutions.",
-                  image: "/assets/e-learing-distance-education-icons-interface.jpg",
+                  image: "/assets/Peunique45.png",
                 },
                 {
                   icon: <Shield className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
                   title: "Coaching & Training Institutes",
                   description: "Collect course fees, workshop registrations, and recurring payments online using UPI, Cards, Net Banking, Wallets, and more.",
-                  image: "/assets/friends-with-smile-happy-emotions-university.jpg",
+                  image: "/assets/people-taking-part-business-event.jpg",
                 },
                 {
                   icon: <BarChart3 className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
                   title: "Online Learning Platforms & Ed-Tech Companies",
                   description: "Offer flexible payment options for online courses, subscriptions, and learning tools—fully optimized for web and mobile users.",
-                  image: "/assets/people-taking-part-business-event.jpg",
+                  image: "/assets/friends-with-smile-happy-emotions-university.jpg",
                 },
                 {
                   icon: <CreditCard className="h-8 w-8 text-purple-600 dark:text-purple-400" />,
