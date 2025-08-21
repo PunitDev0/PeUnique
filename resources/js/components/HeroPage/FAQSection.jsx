@@ -45,12 +45,12 @@ export default function PaymentGatewayInfo() {
 
            {/* Understanding Payment Gateways */}
            <div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
               Understanding{" "}
               <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
                 Payment Gateways
               </span>
-            </h2>
+            </h4>
             <p className="text-muted-foreground text-base md:text-lg max-w-xl">
               Everything you need to know about payment gateways and solutions for seamless transactions.
             </p>
