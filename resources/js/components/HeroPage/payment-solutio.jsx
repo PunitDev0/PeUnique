@@ -64,14 +64,14 @@ export default function PaymentSolutions() {
     <section className="py-16 px-4 md:px-6 lg:px-8 bg-background border" id="payment-solutions">
       <div className="container mx-auto max-w-[1600px] relative">
         <div className="text-center mb-12">
-          <motion.h2
+          <motion.h3
             className="text-3xl md:text-4xl font-bold mb-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
             Multiple Payment Solutions for Every Business
-          </motion.h2>
+          </motion.h3>
           <motion.p
             className="text-muted-foreground max-w-2xl mx-auto text-lg"
             initial={{ opacity: 0, y: 20 }}

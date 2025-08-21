@@ -29,12 +29,12 @@ export default function PaymentGatewayInfo() {
 
           {/* Why Choose Us */}
           <div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
               Why Choose Our{" "}
               <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
-                Payment Services?
+                Payment Gateway Services?
               </span>
-            </h2>
+            </h4>
             <p className="text-muted-foreground text-base md:text-lg max-w-xl mb-6">
               Trusted by businesses across India, our secure and efficient payment gateway empowers e-commerce, education, and retail with effortless payment management.
             </p>
@@ -97,7 +97,9 @@ export default function PaymentGatewayInfo() {
                 className="border rounded-lg shadow-sm hover:shadow-md transition-shadow"
               >
                 <AccordionTrigger className="text-lg md:text-xl font-semibold text-foreground px-4 py-3">
-                  {item.title}
+                  <h4>
+                    {item.title}
+                  </h4>
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground text-base md:text-lg px-4 py-2">
                   {item.content}

@@ -90,12 +90,12 @@ export default function PaymentGatewayFeatures() {
     <section className="relative bg-background py-12 sm:py-16 md:py-24 overflow-hidden" ref={containerRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-12 sm:mb-16 md:mb-20">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
             Features of Our{" "}
             <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
               Payment Gateway
             </span>
-          </h2>
+          </h3>
           <p className="text-muted-foreground text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
             Discover the best payment gateway in India, offering secure and seamless transaction processing for all business types.
           </p>
