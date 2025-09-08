@@ -15,7 +15,7 @@ export const posts = [
   {
     id: 2,
     title: "Best Payment Gateway Provider: Top Choices for 2025",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl.",
+    content: "In today’s digital era, businesses require secure, fast, and efficient payment processing to thrive. Whether you run an eCommerce store, a retail business, or an educational institution, choosing the right payment gateway provider is crucial for seamless transactions.",
     author: "Komal Singh",
     date: "March 30, 2025",
     readTime: "6 min read",
@@ -27,7 +27,7 @@ export const posts = [
   {
     id: 3,
     title: "Best Payment Gateways & Payment Solutions in India",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl.",
+    content: "In today’s fast-paced digital world, having a secure and reliable payment gateway is essential for businesses to process transactions smoothly. Whether you run an eCommerce store, an education platform, a retail business, or a mobile app, choosing the right payment gateway ensures seamless payment processing, enhanced security, and customer satisfaction.",
     author: "Komal Singh",
     date: "March 20, 2025",
     readTime: "4 min read",
@@ -52,7 +52,7 @@ export const posts = [
   {
     id: 5,
     title: "Trusted E-commerce Payment Gateway Solutions",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl.",
+    content: "Why a Trusted E-commerce Payment Gateway Matters In today’s fast-paced digital world, a Trusted E-commerce Payment Gateway is the backbone of any successful online business. With the rapid growth of e-commerce, ensuring secure, smooth, and efficient transactions is more important than ever. ",
     author: "Komal Singh",
     date: "March 5, 2025",
     readTime: "5 min read",
@@ -64,7 +64,7 @@ export const posts = [
   {
     id: 6,
     title: "Best Payment Gateway Provider in Noida: Local Expertise",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl.",
+    content: "In the digital era, businesses in Noida require a secure and efficient payment gateway to process transactions smoothly. Whether you’re running an e-commerce store, educational institution, mobile app, or retail business, having a reliable payment solution is crucial. PeUnique is a leading payment gateway provider in Noida, offering robust and secure solutions tailored to various business needs.",
     author: "Komal Singh",
     date: "February 25, 2025",
     readTime: "6 min read",
@@ -76,7 +76,7 @@ export const posts = [
   {
     id: 7,
     title: "Top Payment Gateways Company in India: Market Leaders",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl.",
+    content: "In today’s digital era, businesses need secure, fast, and reliable payment solutions to ensure smooth transactions. Choosing the right payment gateway is crucial for enhancing customer experience and ensuring seamless payment processing. India has witnessed a surge in digital transactions, making top payment gateways company in India essential for businesses of all sizes. ",
     author: "Komal Singh",
     date: "February 15, 2025",
     readTime: "4 min read",
@@ -88,7 +88,7 @@ export const posts = [
   {
     id: 8,
     title: "Secure Payment Gateway for Every Business in India",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl.",
+    content: "In today’s fast-paced digital world, businesses require a secure payment gateway to process transactions smoothly and securely. Whether you run an e-commerce store, a B2B service, or a mobile application, having a Secure Payment Gateway for Every Business Provider in India is essential. Our advanced payment solutions ensure seamless integration, robust security, and support for multiple payment methods, making online transactions easier than ever.",
     author: "Komal Singh",
     date: "February 10, 2025",
     readTime: "6 min read",
@@ -97,18 +97,18 @@ export const posts = [
     image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*bmWiY-6PueOVfHtqN2fKRw.png",
     link: "https://medium.com/@komalsinghnikatby/secure-payment-gateway-for-every-business-provider-in-india-ef4da43d5292"
   },
-  {
-    id: 9,
-    title: "LiveJournal Update: Advanced Payment Gateway Features",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl.",
-    author: "Komal Singh",
-    date: "February 5, 2025",
-    readTime: "5 min read",
-    category: "Technology",
-    tags: ["Payment Gateway", "Features", "Trends"],
-    image: "https://ic.pics.livejournal.com/ext_6726001/100879351/1961/1961_800.png",
-    link: "https://ext-6726001.livejournal.com/1611.html?newpost=1"
-  },
+  // {
+  //   id: 9,
+  //   title: "LiveJournal Update: Advanced Payment Gateway Features",
+  //   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl. Sed euismod, diam sit amet dictum ultrices, nunc nisl ultricies nisl, vitae ultricies nisl nisl sit amet nisl.",
+  //   author: "Komal Singh",
+  //   date: "February 5, 2025",
+  //   readTime: "5 min read",
+  //   category: "Technology",
+  //   tags: ["Payment Gateway", "Features", "Trends"],
+  //   image: "https://ic.pics.livejournal.com/ext_6726001/100879351/1961/1961_800.png",
+  //   link: "https://ext-6726001.livejournal.com/1611.html?newpost=1"
+  // },
   {
     id: 10,
     title: "Multiple Payment Solutions for Every Business",
@@ -168,5 +168,29 @@ export const posts = [
     tags: ["Payment Gateway", "Features", "Trends"],
     image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*GQTIFse40WnxGCtqHM9opA.png",
     link: "https://medium.com/@komalsinghnikatby/best-e-commerce-payment-gateway-system-provider-in-india-a072373f8996"
+  },
+  {
+    id: 15,
+    title: "How to Add a Payment Gateway to Your Website Easily — India Edition",
+    content: "India’s digital payment ecosystem has witnessed explosive growth — UPI transactions alone exceeded ₹90,000 crore in daily volume by mid-2025, up significantly from earlier in the year The Times of India.",
+    author: "Komal Singh",
+    date: "February 5, 2025",
+    readTime: "5 min read",
+    category: "Technology",
+    tags: ["Payment Gateway", "Features", "Trends"],
+    image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*q3wKX3VSWCfIPV2zhw6n3g.png",
+    link: "https://medium.com/@komalsinghnikatby/how-to-add-a-payment-gateway-to-your-website-easily-india-edition-04a074dd2ef7"
+  },
+  {
+    id: 16,
+    title: "Best Payment Gateway in India to Accept Online Payments",
+    content: "Accept Online Payments Seamlessly in India with PeUnique Payment Gateway With easy integration, fast onboarding, and a feature-rich checkout, PeUnique’s payment gateway makes online transactions effortless for businesses of all sizes.",
+    author: "Komal Singh",
+    date: "February 5, 2025",
+    readTime: "5 min read",
+    category: "Technology",
+    tags: ["Payment Gateway", "Features", "Trends"],
+    image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*6WyrOPOy-21xU3EPt1_zmQ.png",
+    link: "https://medium.com/@komalsinghnikatby/best-payment-gateway-in-india-to-accept-online-payments-917b9d671011"
   },
 ];
