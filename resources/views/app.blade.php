@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="Qe-JqwVr8GR7ngT-M8yGFneOZ_ZVy-ehhKX9NsH59aA" />
-    <meta name="keywords" content="Payment Gateway in India, E-Commerce and Education Payment Gateway">
     <link rel="canonical" href="https://www.peunique.com"/>
     <link rel="alternate" href="https://www.peunique.com"/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VK0TEYD8BX"></script> 
@@ -26,6 +25,7 @@ Sector 63- UP 201301"/>
     <meta name="YahooSeeker" content="INDEX, FOLLOW"/>
     <meta name="msnbot" content="INDEX, FOLLOW"/>
     <meta name="googlebot" content="INDEX, FOLLOW"/>
+    <meta property="Keywords" content="payment gateway, online payment gateway, best payment gateway, payment gateway for website, Payment Gateway India, secure online payments, payment processing, digital payment solution" data-rh="true">
     <!-- <link rel="shortcut icon" href="https://www.peunique.com/assets/img/logo.png" type="image/x-icon"> -->
    
         <!-- Scripts -->

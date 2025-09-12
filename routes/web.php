@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\ContactController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SitemapController;
 use Illuminate\Foundation\Application;
@@ -72,6 +73,7 @@ Route::get('/terms&conditions', function () {
         ],
     ]);
 });
+Route::post('/contact',[ContactController::class,'sendMessage'] );
 
 Route::get('/sitemap.xml', [SitemapController::class, 'index']);
 

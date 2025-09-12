@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Send, Clock, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
-import { Link, Head } from "@inertiajs/react"; // Updated import
+import { Link, Head, router } from "@inertiajs/react"; // Updated import
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -18,12 +18,20 @@ export default function SupportPage({meta}) {
     message: "",
   });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    alert("Thank you for your message. We'll get back to you soon!");
-    setFormData({ name: "", email: "", subject: "", message: "" });
-  };
+const handleSubmit = (e) => {
+  e.preventDefault();
+
+  router.post("/contact", formData, {
+    onSuccess: () => {
+      alert("✅ Thank you for your message. We'll get back to you soon!");
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    },
+    onError: (errors) => {
+      console.error("Form errors:", errors);
+      alert("❌ Please check your inputs.");
+    },
+  });
+};
 
   return (
     <>
@@ -100,9 +108,7 @@ export default function SupportPage({meta}) {
                     <div>
                       <p className="text-sm text-gray-500 dark:text-gray-400">Address</p>
                       <address className="not-italic text-gray-900 dark:text-white font-medium">
-                      H-169,F-04,Sector-63
-                        <br />
-                        Noida, Uttar Pardesh-201301
+                      H-73 , Ground Floor , Noida Sector-63
                       </address>
                     </div>
                   </div>
@@ -127,28 +133,28 @@ export default function SupportPage({meta}) {
                   <h3 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white mb-4">Connect With Us</h3>
                   <div className="flex space-x-4">
                     <a
-                      href="#"
+                      href="https://www.facebook.com/peuniquepaymentsolution/"
                       className="h-10 w-10 rounded-full bg-purple-100 dark:bg-purple-900/50 flex items-center justify-center text-purple-600 dark:text-purple-400 hover:bg-purple-200 dark:hover:bg-purple-800/50 transition-colors"
                       aria-label="Facebook"
                     >
                       <Facebook className="h-5 w-5" />
                     </a>
                     <a
-                      href="#"
+                      href="https://x.com/pe_unique"
                       className="h-10 w-10 rounded-full bg-purple-100 dark:bg-purple-900/50 flex items-center justify-center text-purple-600 dark:text-purple-400 hover:bg-purple-200 dark:hover:bg-purple-800/50 transition-colors"
                       aria-label="Twitter"
                     >
                       <Twitter className="h-5 w-5" />
                     </a>
                     <a
-                      href="#"
+                      href="https://www.instagram.com/pe_unique/"
                       className="h-10 w-10 rounded-full bg-purple-100 dark:bg-purple-900/50 flex items-center justify-center text-purple-600 dark:text-purple-400 hover:bg-purple-200 dark:hover:bg-purple-800/50 transition-colors"
                       aria-label="Instagram"
                     >
                       <Instagram className="h-5 w-5" />
                     </a>
                     <a
-                      href="#"
+                      href="https://www.linkedin.com/company/peunique-payment-solution-pvt-ltd"
                       className="h-10 w-10 rounded-full bg-purple-100 dark:bg-purple-900/50 flex items-center justify-center text-purple-600 dark:text-purple-400 hover:bg-purple-200 dark:hover:bg-purple-800/50 transition-colors"
                       aria-label="LinkedIn"
                     >
@@ -177,93 +183,93 @@ export default function SupportPage({meta}) {
             
 
               {/* Contact Form */}
-              <div className="bg-white dark:bg-black/40 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-gray-200 dark:border-purple-900/30 shadow-sm dark:shadow-purple-900/5">
-                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-6 tracking-tight">Send Us a Message</h2>
-                <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                <div className="bg-white dark:bg-black/40 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-gray-200 dark:border-purple-900/30 shadow-sm dark:shadow-purple-900/5">
+                  <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-6 tracking-tight">Send Us a Message</h2>
+                  <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                      <div className="space-y-2">
+                        <Label htmlFor="name" className="text-gray-700 dark:text-gray-300">Full Name</Label>
+                        <Input
+                          id="name"
+                          name="name"
+                          value={formData.name}
+                          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                          placeholder="John Doe"
+                          required
+                          className="bg-gray-50 dark:bg-gray-900/50 border-gray-200 dark:border-gray-800 focus:border-purple-500 dark:focus:border-purple-500 focus:ring-purple-500 dark:focus:ring-purple-500 text-sm sm:text-base"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="email" className="text-gray-700 dark:text-gray-300">Email Address</Label>
+                        <Input
+                          id="email"
+                          name="email"
+                          type="email"
+                          value={formData.email}
+                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                          placeholder="john@example.com"
+                          required
+                          className="bg-gray-50 dark:bg-gray-900/50 border-gray-200 dark:border-gray-800 focus:border-purple-500 dark:focus:border-purple-500 focus:ring-purple-500 dark:focus:ring-purple-500 text-sm sm:text-base"
+                        />
+                      </div>
+                    </div>
+
                     <div className="space-y-2">
-                      <Label htmlFor="name" className="text-gray-700 dark:text-gray-300">Full Name</Label>
-                      <Input
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        placeholder="John Doe"
+                      <Label htmlFor="subject" className="text-gray-700 dark:text-gray-300">Subject</Label>
+                      <Select onValueChange={(value) => setFormData({ ...formData, subject: value })}>
+                        <SelectTrigger className="bg-gray-50 dark:bg-gray-900/50 border-gray-200 dark:border-gray-800 text-sm sm:text-base">
+                          <SelectValue placeholder="Select a topic" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="general">General Inquiry</SelectItem>
+                          <SelectItem value="support">Technical Support</SelectItem>
+                          <SelectItem value="billing">Billing Question</SelectItem>
+                          <SelectItem value="partnership">Partnership Opportunity</SelectItem>
+                          <SelectItem value="feedback">Feedback</SelectItem>
+                        </SelectContent>
+                      </Select>
+                    </div>
+
+                    <div className="space-y-2">
+                      <Label htmlFor="message" className="text-gray-700 dark:text-gray-300">Message</Label>
+                      <Textarea
+                        id="message"
+                        name="message"
+                        value={formData.message}
+                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                        placeholder="How can we help you?"
                         required
-                        className="bg-gray-50 dark:bg-gray-900/50 border-gray-200 dark:border-gray-800 focus:border-purple-500 dark:focus:border-purple-500 focus:ring-purple-500 dark:focus:ring-purple-500 text-sm sm:text-base"
+                        className="min-h-[120px] sm:min-h-[150px] bg-gray-50 dark:bg-gray-900/50 border-gray-200 dark:border-gray-800 focus:border-purple-500 dark:focus:border-purple-500 focus:ring-purple-500 dark:focus:ring-purple-500 text-sm sm:text-base"
                       />
                     </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="email" className="text-gray-700 dark:text-gray-300">Email Address</Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        placeholder="john@example.com"
+
+                    <div className="flex items-center">
+                      <input
+                        type="checkbox"
+                        id="privacy"
+                        className="h-4 w-4 rounded border-gray-300 text-purple-600 focus:ring-purple-500 dark:border-gray-700 dark:bg-gray-900"
                         required
-                        className="bg-gray-50 dark:bg-gray-900/50 border-gray-200 dark:border-gray-800 focus:border-purple-500 dark:focus:border-purple-500 focus:ring-purple-500 dark:focus:ring-purple-500 text-sm sm:text-base"
                       />
+                      <label htmlFor="privacy" className="ml-2 block text-sm text-gray-600 dark:text-gray-400">
+                        I agree to the{" "}
+                        <Link href="/privacy" className="text-purple-600 dark:text-purple-400 hover:underline">
+                          Privacy Policy
+                        </Link>
+                      </label>
                     </div>
-                  </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="subject" className="text-gray-700 dark:text-gray-300">Subject</Label>
-                    <Select onValueChange={(value) => setFormData({ ...formData, subject: value })}>
-                      <SelectTrigger className="bg-gray-50 dark:bg-gray-900/50 border-gray-200 dark:border-gray-800 text-sm sm:text-base">
-                        <SelectValue placeholder="Select a topic" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="general">General Inquiry</SelectItem>
-                        <SelectItem value="support">Technical Support</SelectItem>
-                        <SelectItem value="billing">Billing Question</SelectItem>
-                        <SelectItem value="partnership">Partnership Opportunity</SelectItem>
-                        <SelectItem value="feedback">Feedback</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="message" className="text-gray-700 dark:text-gray-300">Message</Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="How can we help you?"
-                      required
-                      className="min-h-[120px] sm:min-h-[150px] bg-gray-50 dark:bg-gray-900/50 border-gray-200 dark:border-gray-800 focus:border-purple-500 dark:focus:border-purple-500 focus:ring-purple-500 dark:focus:ring-purple-500 text-sm sm:text-base"
-                    />
-                  </div>
-
-                  <div className="flex items-center">
-                    <input
-                      type="checkbox"
-                      id="privacy"
-                      className="h-4 w-4 rounded border-gray-300 text-purple-600 focus:ring-purple-500 dark:border-gray-700 dark:bg-gray-900"
-                      required
-                    />
-                    <label htmlFor="privacy" className="ml-2 block text-sm text-gray-600 dark:text-gray-400">
-                      I agree to the{" "}
-                      <Link href="/privacy" className="text-purple-600 dark:text-purple-400 hover:underline">
-                        Privacy Policy
-                      </Link>
-                    </label>
-                  </div>
-
-                  <Button
-                    type="submit"
-                    className="w-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white transition-all duration-300 group relative overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1"
-                  >
-                    <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
-                    <span className="relative z-10 flex items-center justify-center text-sm sm:text-base">
-                      Send Message
-                      <Send className="ml-2 h-4 w-4" />
-                    </span>
-                  </Button>
-                </form>
-              </div>
+                    <Button
+                      type="submit"
+                      className="w-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white transition-all duration-300 group relative overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1"
+                    >
+                      <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+                      <span className="relative z-10 flex items-center justify-center text-sm sm:text-base">
+                        Send Message
+                        <Send className="ml-2 h-4 w-4" />
+                      </span>
+                    </Button>
+                  </form>
+                </div>
 
                {/* Support Sections */}
                <div className="bg-white dark:bg-black/40 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-gray-200 dark:border-purple-900/30 shadow-sm dark:shadow-purple-900/5">
