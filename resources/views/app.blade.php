@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="Qe-JqwVr8GR7ngT-M8yGFneOZ_ZVy-ehhKX9NsH59aA" />
-    <link rel="canonical" href="https://www.peunique.com"/>
+    <link rel="canonical" href="{{ url()->current() }}"/>
     <link rel="alternate" href="https://www.peunique.com"/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VK0TEYD8BX"></script> 
     <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-VK0TEYD8BX'); </script>

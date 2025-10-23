@@ -77,4 +77,12 @@ Route::post('/contact',[ContactController::class,'sendMessage'] );
 
 Route::get('/sitemap.xml', [SitemapController::class, 'index']);
 
+Route::fallback(function () {
+    return Inertia::render('Errors/NotFound', [
+        'status' => 404,
+        'message' => 'Page not found',
+    ])->toResponse(request())->setStatusCode(404);
+});
+
+// Route::permanentRedirect('/', '/');
 
