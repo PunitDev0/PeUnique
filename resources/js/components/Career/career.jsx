@@ -1,9 +1,16 @@
+import { Head } from '@inertiajs/react';
 import React from 'react';
 
-const CareersPage = () => {
+const CareersPage = ({meta}) => {
   return (
     <div className="font-sans bg-gradient-to-br from-gray-50 to-gray-200 min-h-screen">
-     
+     <Head>
+        <title>{meta?.title}</title>
+        <meta
+          name="description"
+          content={meta?.description}
+        />
+      </Head>
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-purple-100 to-blue-100 py-20 px-8 flex flex-col items-center text-center overflow-hidden mt-16">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(147,51,234,0.2),transparent_70%)] z-0"></div>

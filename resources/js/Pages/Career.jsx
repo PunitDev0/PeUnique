@@ -2,10 +2,11 @@ import CareersPage from '@/components/Career/career'
 import Layout from '@/components/Layout/Layout'
 import React from 'react'
 
-function Career() {
+function Career({meta}) {
+  console.log(meta)
   return (
     <Layout>
-      <CareersPage/>
+      <CareersPage meta={meta}/>
     </Layout>
   )
 }

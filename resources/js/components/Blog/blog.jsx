@@ -3,17 +3,21 @@ import BlogLayout from './BlogLayout';
 import FeaturedPost from './FeaturedPost';
 import PostCard from './PostCard';
 import { posts } from './posts';
+import { Head } from '@inertiajs/react';
 
-const Index = () => {
+const Index = ({meta}) => {
   const featuredPosts = posts.filter(post => post.featured);
   const regularPosts = posts.filter(post => !post.featured);
 
   return (
     <BlogLayout>
-      {/* <BlogHeader 
-        title="Welcome to DevBlog"
-        subtitle="Insights and tips about web development, programming, and tech trends."
-      /> */}
+      <Head>
+        <title>{meta?.title}</title>
+        <meta
+          name="description"
+          content={meta?.description}
+        />
+      </Head>
       
       <section className="mb-16">
         <h2 className="text-2xl font-bold mb-6 border-b pb-2">Featured Posts</h2>

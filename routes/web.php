@@ -32,7 +32,7 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return Inertia::render('Contact',[
         'meta' => [
-            'title' => 'PeUnique Support',
+            'title' => 'Contact PeUnique | Leading Fintech & Digital Payment Company India',
             'description' => 'We are here to assist you with all your payment-related needs. Contact our dedicated support team for a smooth and hassle-free experience.',
         ],
     ]);
@@ -55,12 +55,17 @@ Route::get('/education', function () {
 });
 
 Route::get('/careers', function () {
-    return Inertia::render('Career');
+    return Inertia::render('Career',[
+        'meta' => [
+            'title' => 'Careers at PeUnique | Fintech Jobs in India | Join a Leading Digital Payment & Technology Company',
+            'description' => '',
+        ],
+    ]);
 });
 Route::get('/blog', function () {
     return Inertia::render('Blog',[
         'meta' => [
-            'title' => '',
+            'title' => 'PeUnique Blog | Fintech Insights & Digital Payment Trends',
             'description' => '',
         ],
     ]);

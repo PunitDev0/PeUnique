@@ -3,10 +3,10 @@ import Layout from '@/components/Layout/Layout'
 import Navbar from '@/components/Layout/Navbar'
 import React from 'react'
 
-function Blog() {
+function Blog({meta}) {
   return (
     <Layout>
-      <BlogPage/>
+      <BlogPage meta={meta}/>
     </Layout>
   )
 }
