@@ -77,8 +77,8 @@ export function HeroSection({ title, description, alt }) {
               >
                 {title ? title : (
                   <>
-                    Secure Payment Gateway for Every{" "}
-                    <span className="gradient-text">Business in India</span>
+                    Best Secure Online {" "}
+                    <span className="gradient-text">Payment Gateway in India</span>
                   </>
                 )}
               </motion.h1>

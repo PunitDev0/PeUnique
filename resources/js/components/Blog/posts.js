@@ -45,7 +45,7 @@ export const posts = [
     readTime: "7 min read",
     category: "Market Trends",
     tags: ["Payment Gateway", "India", "Trends"],
-    image: "https://ic.pics.livejournal.com/ext_6726001/100879351/1656/1656_800.png",
+    image: "/assets/Ecommerce payment.png",
     featured: true,
     link: "https://ext-6726001.livejournal.com/1355.html?newpost=1"
   },

@@ -41,7 +41,7 @@ export function CtaSection() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">
-            Ready to Transform Your Financial Future?
+            Grow Your Business & Secure Your Financial Future ?
           </h2>
           <p className="mb-8 text-lg text-muted-foreground">
             Join thousands of users who have already taken control of their finances with PeUnique. Start your journey to
